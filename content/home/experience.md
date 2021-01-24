@@ -32,12 +32,12 @@ experience:
         **Biomedical Department**:
         
         * Leveraged Smartsheets API to programmatically access hierarchical data and transformed it into interactive dashboards.
-        * Developed a Python library REMAP to convert raw data and sync with the Elasticsearch indexes.
+        * Developed a Python library REMAP to structure raw data and sync with the Elasticsearch indexes.
         * Designed a Data Mining Workflow of 2D Materials for Biofilm Data and Information Discovery System.
-        * Built a web app in Streamlit for computing the 2D materials characteristics using Logistic Regression and KNN clustering.
+        * Built a web app in Streamlit for computing the characteristics of 2D materials using Logistic Regression and KNN clustering.
         * Developed an API wrapper for Globus in Python.
         
-        
+
         **Computer Science Department**:
         
         * Predicted COVID -19 trend worldwide with up to 90% accuracy using Polynomial Regression, Cross-Validation scheme, and visualizations.
@@ -53,7 +53,7 @@ experience:
     description:  |2-
         **Industry: IoT, Energy**
         
-        * Exploratory/Unstructured problem solving - identifying use cases from big-time-series for scalability across customers.
+        * Exploratory/Unstructured problem solving - identified use cases from big-time-series for scalability across customers.
         * Anomaly Detection in time series data streams across sites to benchmark data while normalizing it against external factors for actionable insights.
         * Streamed data by removing inconsistencies and structuring metrics.
         * Created DEX tools via interactive dashboards for account managers.
