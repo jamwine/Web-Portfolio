@@ -25,9 +25,6 @@ interests:
 - Data Structures & Algorithms
 - Web Scraping and Data Mining
 - Computer Vision techniques and Deep Learning models
-- Open Source Technologies
-- Financial Analysis and Stock Markets
-- PC Gaming, DJ, Chess, Table Tennis, Travelling
 
 # Education to show in About widget
 education:
@@ -81,11 +78,12 @@ I am always up for:
  - a cup of delicious coffee
  - dark chocolates
  - discovering new music: [J A M W I N E](https://jam-wine.tumblr.com/)
- - a game of chess or table tennis
- - exploring Open Source technologies
+ - Stock Markets and investments
+ - a game of Chess or Table Tennis
+ - exploring Open Source Technologies
  - PC Gaming and eSports
  - Coursera MOOCs
  - discussion about new gadgets and PC configurations
- - Travelling (*obviously*)
+ - Travelling (*obviously* :sweat_smile:)
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
