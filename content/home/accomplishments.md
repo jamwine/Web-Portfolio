@@ -23,28 +23,28 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-- certificate_url: https://www.coursera.org
+- certificate_url: https://drive.google.com/drive/folders/1ax3GNom6oV6kqe4vubMIsGD5AwTUXgU7
   date_end: ""
-  date_start: "2018-10-01"
+  date_start: ""
   description: ""
-  organization: Coursera
-  organization_url: https://www.coursera.org
-  title: Neural Networks and Deep Learning
+  organization: 
+  organization_url:
+  title: Have successfully completed 80+ certifications from esteemed universities and organizations via Coursera in the field of technology, finance, and management.
   url: ""
-- certificate_url: https://www.edx.org
-  date_end: ""
-  date_start: "2018-03-01"
-  description: Formulated informed blockchain models, hypotheses, and use cases.
-  organization: edX
-  organization_url: https://www.edx.org
-  title: Blockchain Fundamentals
-  url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-- certificate_url: https://www.datacamp.com
-  date_end: "2017-12-21"
-  date_start: "2017-07-01"
-  description: ""
-  organization: DataCamp
-  organization_url: https://www.datacamp.com
-  title: 'Object-Oriented Programming in R: S3 and R6 Course'
+- certificate_url: http://coursera.org/verify/professional-cert/KEYKAE8PR59N
+  date_end: "2020-06-01"
+  date_start: ""
+  description: Advancing in troubleshooting, customer service, networking, operating systems, system administration, and security
+  organization: Google 
+  organization_url:
+  title: Google IT Support Professional Specialization
+  url: https://grow.google/programs/it-support/#?modal_active=none
+- certificate_url: https://drive.google.com/file/d/1mW314TVS5gH3bOooA-q6oO74_fSvi7Vl/view?usp=sharing
+  date_end: "2017-11-01"
+  date_start: ""
+  description: "For contribution in achieving desired Business Results"
+  organization: Cognizant
+  organization_url: https://www.cognizant.com/india
+  title: 'SPOT Award'
   url: ""
 ---
