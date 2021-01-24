@@ -74,6 +74,8 @@ highlight_name: false
 
 I am a software Developer with Masters and 4+ years of professional experience in working towards data analysis and defining data driven models for actionable insights. I have a strong mathematical background with analytical and problem solving skills. I excel in automating back-end processes, gathering raw data by utilizing APIs and defining machine Learning models with visual animations. My experience at USD, Zenatix and Cognizant makes me versatile in working independently as well as with big teams.
 
+![jamwine.png](https://avatars.githubusercontent.com/u/7883396?s=460&u=56eaac1fc8d368fa0e20a5358ebe36de17c6facd&v=4)
+
 I am always up for:
  - a cup of delicious coffee
  - dark chocolates
