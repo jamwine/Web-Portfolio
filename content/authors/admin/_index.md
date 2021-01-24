@@ -80,7 +80,7 @@ I am always up for:
  - discovering new music: [J A M W I N E](https://jam-wine.tumblr.com/)
  - Stock Markets and investments
  - a game of Chess or Table Tennis
- - exploring Open Source Technologies
+ - exploring Open Source Technologies: [Work With Data](https://workwithdata.tumblr.com/)
  - PC Gaming and eSports
  - Coursera MOOCs
  - discussion about new gadgets and PC configurations
