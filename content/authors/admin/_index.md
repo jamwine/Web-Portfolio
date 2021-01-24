@@ -77,4 +77,15 @@ highlight_name: false
 
 I am a software Developer with Masters and 4+ years of professional experience in working towards data analysis and defining data driven models for actionable insights. I have a strong mathematical background with analytical and problem solving skills. I excel in automating back-end processes, gathering raw data by utilizing APIs and defining machine Learning models with visual animations. My experience at USD, Zenatix and Cognizant makes me versatile in working independently as well as with big teams.
 
+I am always up for:
+ - a cup of delicious coffee
+ - dark chocolates
+ - discovering new music: [J A M W I N E](https://jam-wine.tumblr.com/)
+ - a game of chess or table tennis
+ - exploring Open Source technologies
+ - PC Gaming and eSports
+ - Coursera MOOCs
+ - discussion about new gadgets and PC configurations
+ - Travelling (*obviously*)
+
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
