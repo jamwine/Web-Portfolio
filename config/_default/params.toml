@@ -97,7 +97,7 @@ address = {street = "805 N Plum St.", city = "Vermillion", region = "SD", postco
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "42.7881", longitude = "-96.9196"}
+coordinates = {latitude = "27.2046", longitude = "77.4977"}
 
 # Directions for visitors to locate you.
 directions = "Nearby University of South Dakota"
