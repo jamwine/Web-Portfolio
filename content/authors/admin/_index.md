@@ -19,7 +19,7 @@ bio: Experience in analyzing existing system, designing data driven models and d
 # Interests to show in About widget
 interests:
 - Machine Learning and Artificial Intelligence
-- Trend Analyis and Predictive Analytics
+- Trend Analysis and Predictive Analytics
 - Data Science and Information Visualization
 - Statistical Modeling and Feature Engineering
 - Data Structures & Algorithms
@@ -34,10 +34,10 @@ education:
   courses:
   - course: MS in Computer Science
     institution: University of South Dakota
-    year: 2020 - 2021
+    year: 2020
   - course: BTech in Electronics & Telecommunications
     institution: Jaypee Institute of Information Technology
-    year: 2012 - 2016
+    year: 2016
   
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -47,18 +47,19 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '/#contact'
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
-  icon_pack: fas
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/jamwine
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/
+  link: https://www.linkedin.com/in/shaurya-khurana/
+- icon: soundcloud
+  icon_pack: fab
+  link: https://soundcloud.com/jamwine
+- icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
+  icon_pack: fas
+  link: https://www.youracclaim.com/users/shaurya-khurana/badges
+
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/media/resume.pdf`, enable `ai` icons in `params.toml`, 
@@ -74,6 +75,6 @@ email: ""
 highlight_name: false
 ---
 
-I have a strong mathematical background with analytical and problem solving skills. I excel in automating back-end processes, gathering raw data by utilizing APIs and defing machine Learning models. My experience at USD, Zenatix and Cognizant makes me versatile in working independently as well as with big teams.
+Software Developer with Masters and 4+ years of professional experience in working towards data analysis and defining data driven models for actionable insights. I have a strong mathematical background with analytical and problem solving skills. I excel in automating back-end processes, gathering raw data by utilizing APIs and defining machine Learning models with visual animations. My experience at USD, Zenatix and Cognizant makes me versatile in working independently as well as with big teams.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
