@@ -18,7 +18,7 @@ subtitle:
 feature:
 - description:
   icon: python
-  icon_pack: fab
+  icon_pack: custom
   name: Python
 - description:
   icon: markdown
@@ -33,21 +33,21 @@ feature:
   icon_pack: custom
   name: Seaborn
 - description:
-  icon: pandas
+  icon: sympy
   icon_pack: custom
-  name: Pandas
+  name: Sympy
 - description:
   icon: numpy
   icon_pack: custom
   name: Numpy
 - description:
-  icon: tensorflow
+  icon: django
   icon_pack: custom
-  name: TensorFlow
+  name: Django
 - description:
-  icon: scikit
+  icon: tableau
   icon_pack: custom
-  name: Scikit Learn
+  name: Tableau
 - description:
   icon: chart-line
   icon_pack: fas
