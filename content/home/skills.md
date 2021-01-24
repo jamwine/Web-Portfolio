@@ -62,12 +62,45 @@ feature:
   name: SQL
 - description:
   icon: aws
-  icon_pack: custom
+  icon_pack: fab
   name: AWS
 - description:
   icon: elastic
   icon_pack: custom
   name: Elasticsearch
+- description:
+  icon: html5
+  icon_pack: fab
+  name: HTML
+- description:
+  icon: git
+  icon_pack: fab
+  name: Git
+- description:
+  icon: docker
+  icon_pack: fab
+  name: Docker
+- description:
+  icon: jira
+  icon_pack: fab
+  name: Jira
+- description:
+  icon: linux
+  icon_pack: fab
+  name: Linux
+- description:
+  icon: github
+  icon_pack: fab
+  name: Github
+- description:
+  icon: trello
+  icon_pack: fab
+  name: Trello
+- description:
+  icon: ubuntu
+  icon_pack: fab
+  name: Ubuntu
+
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
 #  icon_pack: "emoji"

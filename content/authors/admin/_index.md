@@ -53,9 +53,12 @@ social:
 - icon: soundcloud
   icon_pack: fab
   link: https://soundcloud.com/jamwine
-- icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
-  icon_pack: fas
+- icon: acclaim  # Alternatively, use `google-scholar` icon from `ai` icon pack
+  icon_pack: ai
   link: https://www.youracclaim.com/users/shaurya-khurana/badges
+- icon: coursera
+  icon_pack: ai
+  link: https://www.coursera.org/user/ef1e6f2abd6ebf2a7ac72eaf6c825b14
 
 
 # Link to a PDF of your resume/CV.
