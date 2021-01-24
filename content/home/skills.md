@@ -53,9 +53,9 @@ feature:
   icon_pack: fas
   name: Statistics
 - description:
-  icon: camera-retro
-  icon_pack: fas
-  name: Photography
+  icon: scikit
+  icon_pack: custom
+  name: Scikit Learn
 
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
