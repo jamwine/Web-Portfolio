@@ -49,14 +49,25 @@ feature:
   icon_pack: custom
   name: Tableau
 - description:
-  icon: chart-line
-  icon_pack: fas
-  name: Statistics
+  icon: statsmodels
+  icon_pack: custom
+  name: Statsmodels
 - description:
   icon: scikit
   icon_pack: custom
   name: Scikit Learn
-
+- description:
+  icon: sql
+  icon_pack: custom
+  name: SQL
+- description:
+  icon: aws
+  icon_pack: custom
+  name: AWS
+- description:
+  icon: elastic
+  icon_pack: custom
+  name: Elasticsearch
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
 #  icon_pack: "emoji"
