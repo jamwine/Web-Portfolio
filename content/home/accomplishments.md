@@ -47,4 +47,7 @@ item:
   organization_url: https://www.datacamp.com
   title: 'Object-Oriented Programming in R: S3 and R6 Course'
   url: ""
+  
+- ![jamwine.png](https://avatars.githubusercontent.com/u/7883396?s=460&u=56eaac1fc8d368fa0e20a5358ebe36de17c6facd&v=4)
+
 ---
