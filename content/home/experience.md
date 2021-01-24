@@ -61,7 +61,7 @@ experience:
         * Summarized simulations by developing automated visualizations.
         * Refactored code to clean and improve its internal structure, without changing its external functionality.
        
-   - title: Programmer Analyst
+  - title: Programmer Analyst
     company: Cognizant
     company_url: 'https://www.cognizant.com/'
     location: Hyderabad, India
