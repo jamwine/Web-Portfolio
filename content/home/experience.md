@@ -44,7 +44,7 @@ experience:
         * Designed automated animations for Travelling Salesman Problem and String Matching using Genetic Algorithms. 
         * Edge Map detection in Chest Radiographs for understanding abnormalities using Computer Vision techniques and Deep Learning models.
         
-  - title: Beta Testor & Mentor 
+  - title: Beta Tester & Mentor 
     company: Coursera
     company_url: 'https://www.coursera.org/'
     location: Remote
