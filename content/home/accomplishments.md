@@ -23,14 +23,6 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-- certificate_url: https://drive.google.com/drive/folders/1ax3GNom6oV6kqe4vubMIsGD5AwTUXgU7
-  date_end: ""
-  date_start: "2021-01-01"
-  description: 
-  organization: 
-  organization_url:
-  title: Have successfully completed 80+ certifications from esteemed universities and organizations via Coursera in the field of technology, finance, and management.
-  url: ""
 - certificate_url: http://coursera.org/verify/professional-cert/KEYKAE8PR59N
   date_end: ""
   date_start: "2020-06-01"

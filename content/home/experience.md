@@ -44,6 +44,17 @@ experience:
         * Designed automated animations for Travelling Salesman Problem and String Matching using Genetic Algorithms. 
         * Edge Map detection in Chest Radiographs for understanding abnormalities using Computer Vision techniques and Deep Learning models.
         
+  - title: Beta Testor & Mentor 
+    company: Coursera
+    company_url: 'https://www.coursera.org/'
+    location: Remote
+    date_start: '2017-08-01'
+    date_end: ''
+    description:  |2-        
+        * Testing online courses before their launch, and ensuring proper content including videos, audio, quizes and assignments.
+        * Mentoring learners worldwide with their issues and guiding them with career track.
+        * Actively participating in Discussion Forums for anserwing general queries and exploring new ideas.
+       
   - title: Data Analyst
     company: Zenatix
     company_url: 'https://zenatix.com/'
@@ -61,7 +72,7 @@ experience:
         * Deployed time-based and temperature-based controls on appliances.
         * Summarized simulations by developing automated visualizations.
         * Refactored code to clean and improve its internal structure, without changing its external functionality.
-       
+
   - title: Programmer Analyst
     company: Cognizant
     company_url: 'https://www.cognizant.com/'
