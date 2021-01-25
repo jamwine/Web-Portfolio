@@ -29,7 +29,7 @@ experience:
     date_start: '2020-01-11'
     date_end: ''
     description: |2-
-        **Biomedical Department**:
+        **Biomedical Department Startup**:
         
         * Leveraged Smartsheets API to programmatically access hierarchical data and transformed it into interactive dashboards.
         * Developed a Python library REMAP to structure raw data and sync with the Elasticsearch indexes.
