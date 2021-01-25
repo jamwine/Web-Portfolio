@@ -97,5 +97,3 @@ I am always up for:
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
 
 {{< icon name="download" pack="fas" >}} [Certifications](https://drive.google.com/drive/folders/1ax3GNom6oV6kqe4vubMIsGD5AwTUXgU7)
-
-<!-- ![jamwine.png](https://avatars.githubusercontent.com/u/7883396?s=460&u=56eaac1fc8d368fa0e20a5358ebe36de17c6facd&v=4) -->

@@ -89,6 +89,10 @@ feature:
   icon_pack: fab
   name: Linux
 - description:
+  icon: ubuntu
+  icon_pack: fab
+  name: Ubuntu
+- description:
   icon: github
   icon_pack: fab
   name: Github
@@ -96,10 +100,7 @@ feature:
   icon: trello
   icon_pack: fab
   name: Trello
-- description:
-  icon: ubuntu
-  icon_pack: fab
-  name: Ubuntu
+
 
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
