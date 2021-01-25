@@ -26,7 +26,7 @@ item:
 - certificate_url: http://coursera.org/verify/professional-cert/KEYKAE8PR59N
   date_end: ""
   date_start: "2020-06-01"
-  description: Advancing in troubleshooting, customer service, networking, operating systems, system administration, and security
+  description: Advancing in troubleshooting, customer service, networking, operating systems, system administration, and security.
   organization: Google 
   organization_url:
   title: Google IT Support Professional Specialization
@@ -34,7 +34,7 @@ item:
 - certificate_url: https://drive.google.com/file/d/1mW314TVS5gH3bOooA-q6oO74_fSvi7Vl/view?usp=sharing
   date_end: ""
   date_start: "2017-11-01"
-  description: "For contribution in achieving desired Business Results"
+  description: "For contribution in achieving desired Business Results."
   organization: Cognizant
   organization_url: https://www.cognizant.com/india
   title: 'SPOT Award'

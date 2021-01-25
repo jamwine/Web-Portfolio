@@ -51,9 +51,9 @@ experience:
     date_start: '2017-08-01'
     date_end: ''
     description:  |2-        
-        * Testing online courses before their launch, and ensuring proper content including videos, audio, quizes and assignments.
+        * Testing online courses before their launch, and ensuring proper content including videos, audio, quizzes and assignments.
         * Mentoring learners worldwide with their issues and guiding them with career track.
-        * Actively participating in Discussion Forums for anserwing general queries and exploring new ideas.
+        * Actively participating in Discussion Forums for answering general queries and exploring new ideas.
        
   - title: Data Analyst
     company: Zenatix
