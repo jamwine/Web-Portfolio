@@ -35,7 +35,10 @@ education:
   - course: BTech in Electronics & Telecommunications
     institution: Jaypee Institute of Information Technology
     year: 2016
-  
+  - course: [80+ certifications via Coursera](https://drive.google.com/drive/folders/1ax3GNom6oV6kqe4vubMIsGD5AwTUXgU7)
+    institution: Esteemed universities and organizations
+    year: 2016
+
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
