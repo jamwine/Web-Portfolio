@@ -6,7 +6,7 @@ title: SHAURYA KHURANA
 superuser: true
 
 # Role/position/tagline
-role: Software Developer
+role: Software Engineer
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -78,7 +78,7 @@ email: ""
 highlight_name: false
 ---
 
-I am a Software Developer with Masters in Computer Science and 4+ years of professional experience in working towards **data analysis** and **defining data driven models** for actionable insights. I have a strong mathematical background with analytical and problem solving skills. I excel in **automating back-end processes**, gathering raw data by **utilizing APIs** and defining **Machine Learning models with visual animations**. My experience at USD, Zenatix and Cognizant makes me versatile in working *independently* as well as a *team player*.
+I am a Software Engineer with a master's in Computer Science and 4+ years of professional experience in working towards **data analysis** and **defining data-driven models** for actionable insights. I have a strong mathematical background with analytical and problem-solving skills. I excel in **automating back-end processes**, gathering raw data by **utilizing APIs**, and defining **Machine Learning models with visual animations**. My experience at USD, Zenatix, and Cognizant make me versatile in working *independently* as well as a *team player*.
 
 
 I am always up for:
@@ -92,7 +92,7 @@ I am always up for:
  - Coursera MOOCs
  - discussion about new gadgets and PC configurations
  - Logo Designing
- - Travelling (*obviously* :sweat_smile:)
+ - Traveling (*obviously* :sweat_smile:)
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
 
