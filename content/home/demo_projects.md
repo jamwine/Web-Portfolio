@@ -26,7 +26,7 @@ This PROJECT section is **coming soon**.
 Please bear with me, I am still learning to develop a website. :stuck_out_tongue:
 {{% /callout %}}
 
-<!-- ![jamwine.png](https://avatars.githubusercontent.com/u/7883396?s=460&u=56eaac1fc8d368fa0e20a5358ebe36de17c6facd&v=4) -->
+Meanwhile, jump into my projects at [Github](https://github.com/jamwine).
 
 <style>
 .center {
