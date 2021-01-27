@@ -96,4 +96,4 @@ I am always up for:
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
 
-{{< icon name="download" pack="fas" >}} [Certifications](https://drive.google.com/drive/folders/1ax3GNom6oV6kqe4vubMIsGD5AwTUXgU7)
+{{< icon name="download" pack="fas" >}} Verify my [Certifications](https://drive.google.com/drive/folders/1ax3GNom6oV6kqe4vubMIsGD5AwTUXgU7)
