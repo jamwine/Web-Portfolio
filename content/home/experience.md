@@ -52,6 +52,7 @@ experience:
     date_end: ''
     description:  |2-        
         * Testing online courses before their launch, and ensuring proper content including videos, audio, quizzes and assignments.
+        * Providing feedback to course instructors to make sure the finished course is of high quality and free from errors. Tested 15+ courses and provided useful feedback.
         * Mentoring learners worldwide with their issues and guiding them with career track.
         * Actively participating in Discussion Forums for answering general queries and exploring new ideas.
        
