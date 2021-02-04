@@ -29,20 +29,12 @@ experience:
     date_start: '2020-01-11'
     date_end: ''
     description: |2-
-        **Biomedical Department Startup**:
         
-        * Leveraged Smartsheets API to programmatically access hierarchical data and transformed it into interactive dashboards.
-        * Developed a Python library REMAP to structure raw data and sync with the Elasticsearch indexes.
-        * Designed a Data Mining Workflow of 2D Materials for Biofilm Data and Information Discovery System.
-        * Built a web app in Streamlit for computing the characteristics of 2D materials using Logistic Regression and KNN clustering.
-        * Developed an API wrapper for Globus in Python.
-        
-
-        **Computer Science Department**:
-        
-        * Predicted COVID -19 trend worldwide with up to 90% accuracy using Polynomial Regression, Cross-Validation scheme, and visualizations.
-        * Designed automated animations for Travelling Salesman Problem and String Matching using Genetic Algorithms. 
-        * Edge Map detection in Chest Radiographs for understanding abnormalities using Computer Vision techniques and Deep Learning models.
+        * Leveraged **Smartsheets API** to programmatically access **hierarchical data** and transformed it into a **user-interactive dashboard** for biomedical researchers.
+        * Invented a Python library REMAP to structure and sync data with **Elasticsearch**.
+        * Designed a **data mining workflow** for Biofilm Data & Information Discovery System.
+        * Built a web application 2DMatchecker in Streamlit for computing the characteristics of 2D materials using **Logistic Regression** and **k-Means clustering**.
+        * Implemented an authentication gateway for Globus platform using **Python SDK**.
         
   - title: Beta Tester & Mentor 
     company: Coursera
@@ -63,16 +55,12 @@ experience:
     date_start: '2019-02-18'
     date_end: '2019-12-20'
     description:  |2-
-        **Industry: IoT, Energy**
-        
-        * Exploratory/Unstructured problem solving - identified use cases from big-time-series for scalability across customers.
-        * Anomaly Detection in time series data streams across sites to benchmark data while normalizing it against external factors for actionable insights.
-        * Streamed data by removing inconsistencies and structuring metrics.
-        * Created DEX tools via interactive dashboards for account managers.
-        * Forecasted data like Energy Consumption, Energy Savings, Equipment Failures, Controller Health with over 95% accuracy.
-        * Deployed time-based and temperature-based controls on appliances.
-        * Summarized simulations by developing automated visualizations.
-        * Refactored code to clean and improve its internal structure, without changing its external functionality.
+        * **Exploratory data analysis** - analyzed unstructured **big-time-series** by data normalization, identified use cases and benchmarked data by **statistical testing**, and detected anomalies by **information visualizations** for scalability across customers.
+        * Forecasted data like Energy Consumption, Energy Savings, Equipment Failures, Controller Health with over 95% accuracy using **Fourier Transforms** and **ARIMA**.
+        * Deployed a **k-Nearest Neighbors model** to classify appliances and scheduled time-based and temperature-based controls on them for reducing costs up to 30%.
+        * Streamed data by removing inconsistencies and structured it into metrics.
+        * Introduced a **data extracting tool** (DWYW) using ipywidgets for account managers.
+        * Refactored code by modularizing programs in **Django** to clean and improve its internal structure and speed up development time in the long run.
 
   - title: Programmer Analyst
     company: Cognizant
@@ -81,20 +69,13 @@ experience:
     date_start: '2016-11-24'
     date_end: '2019-02-15'
     description:  |2-
-        **Industry: Finance**
-        
-        * Integrated high-volume complex semi-structured data from multiple systems.
-        * Built a data-driven model to determine the incentive for employees.
-        * Curated data sourcing issues and designed APIs to fetch data.
-        * Developed a module to map customer surveys, feedbacks with the application.
-        * Automated the process of loading leases into DIF, reducing the time by 70%.
-        * Modularized programs to speed up development time in the long run.
-
-        
-        **Industry: Healthcare**
-        
-        * Created Application, Database, Process, and BIRT servers in PROD & UAT environments for new clients using AMIs, CloudFormation, and Puppet.
-        * Implemented auto-generated reports like Disk Usage, Server States, and CPU monitoring to speed up hotfixes and patching on servers by 80%.
-        * Analyzed logs for classification of errors using regular expressions and defining user usage statistics across multiple servers.
-        * Scheduled periodic backups/restores and governed security for user groups.Integrated high-volume complex semi-structured data from multiple systems.
+        * Integrated multiple sources of leases data into one system using **Pandas** and **SQL**.
+        * Developed a dashboard in **Streamlit** to capture all customer’s change requests.
+        * Accelerated Business intelligence reporting to assist with purchase-versus-leasing decisions by utilizing **IBM TRIRIGA SaaS**, **Python SciPy stack**, and **Tableau**.
+        * Automated the process of loading leases data (.DIF files), reducing the time by 70%.
+        * Upgraded the KLT framework to fetch customer surveys by designing **REST APIs**, and mapped feedback into the application by incorporating the **Agile** approach.
+        * Innovated a **data-driven model** to determine the employee’s incentive from tickets.
+        * Created Application, Database, Process, and BIRT servers in PROD and UAT environments for new clients using **AMIs**, **CloudFormation**, and **Puppet**.
+        * Designed auto-generated daily email reports like Disk Usage, Server States, and CPU monitoring with detailed analytics for management using **Seaborn** and **Dynatrace**.
+        * Expanded **classification** of log errors using **regular expressions** and defined user usage statistics across multiple servers, to speed up hotfixes and patching by 80%.
 ---
