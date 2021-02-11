@@ -59,7 +59,7 @@ experience:
         * Forecasted data like Energy Consumption, Energy Savings, Equipment Failures, Controller Health with over 95% accuracy using **Fourier Transforms** and **ARIMA**.
         * Deployed a **k-Nearest Neighbors model** to classify appliances and scheduled time-based and temperature-based controls on them for reducing costs up to 30%.
         * Streamed data by removing inconsistencies and structured it into metrics.
-        * Introduced a **data extracting tool** (DWYW) using ipywidgets for account managers.
+        * Introduced a **data extracting tool** (DWYW) using **ipywidgets** for account managers.
         * Refactored code by modularizing programs in **Django** to clean and improve its internal structure and speed up development time in the long run.
 
   - title: Programmer Analyst
