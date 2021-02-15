@@ -189,20 +189,12 @@ section .title::after{
 .about .title::after{
     content: "who i am";
 }
-.about .about-content .left{
-    width: 45%;
-}
-.about .about-content .left img{
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 6px;
-}
-.about .about-content .right{
+
+.about .about-content{
     width: 55%;
 }
 .about .about-content .text{
-    font-size: 25px;
+    font-size: 33px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -758,6 +750,22 @@ footer span a:hover{
       </section>
 
 
+I am always up for:
+ - a cup of delicious coffee
+ - dark chocolates
+ - discovering new music: [J A M W I N E](https://jam-wine.tumblr.com/)
+ - Stock Markets and investments
+ - a game of Chess or Table Tennis
+ - exploring Open Source Technologies: [Work With Data](https://workwithdata.tumblr.com/)
+ - PC Gaming and eSports
+ - Coursera MOOCs
+ - discussion about new gadgets and PC configurations
+ - Logo Designing
+ - Traveling (*obviously* :sweat_smile:)
+
+
+
+
 <script>
   
   $(document).ready(function(){
@@ -791,14 +799,14 @@ footer span a:hover{
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Software Engineer", "Python Developer", "Data Scientist"],
+        strings: ["Software Engineer", "Python Developer", "Data Scientist", "Open Source Contributor"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Software Engineer", "Python Developer", "Data Scientist"],
+        strings: ["COMING SOON"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true

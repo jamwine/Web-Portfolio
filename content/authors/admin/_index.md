@@ -83,32 +83,10 @@ highlight_name: false
           <div class="max-width">
               <h2 class="title">About me</h2>
               <div class="about-content">
-                      <div class="text">I'm Shaurya and I'm a <span class="typing-2"></span></div>
-                      <p>I have a MS degree in Computer Science and 4+ years of professional experience in working towards <bold>data analysis</bold> and <bold>defining data-driven models</bold> for actionable insights. I have a <bold>strong mathematical background</bold> with analytical and problem-solving skills. I excel in <bold>automating back-end processes</bold>, gathering raw data by <bold>utilizing APIs</bold>, and defining </bold>Machine Learning models with visual animations**. My experience at USD, Zenatix, and Cognizant make me versatile in working <em>independently</em> as well as a <i>team player<i>.</p>
-              </div>
-          </div>
-      </section>
-
-I am always up for:
- - a cup of delicious coffee
- - dark chocolates
- - discovering new music: [J A M W I N E](https://jam-wine.tumblr.com/)
- - Stock Markets and investments
- - a game of Chess or Table Tennis
- - exploring Open Source Technologies: [Work With Data](https://workwithdata.tumblr.com/)
- - PC Gaming and eSports
- - Coursera MOOCs
- - discussion about new gadgets and PC configurations
- - Logo Designing
- - Traveling (*obviously* :sweat_smile:)
-
- <!-- home section start -->
-  <section class="home" id="home">
-          <div class="max-width">
-              <div class="home-content">
-                  <div class="text-3">I'm a <span class="typing"></span></div>
-                  {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
-                  <a href="https://drive.google.com/drive/folders/1ax3GNom6oV6kqe4vubMIsGD5AwTUXgU7"> Verify my Certifications</a>
+                      <div class="text">I'm a <span class="typing"></span></div>
+                      <p>I have a MS degree in Computer Science and 4+ years of professional experience in working towards <b>data analysis</b> and <b>defining data-driven models</b> for actionable insights. I have a <b>strong mathematical background</b> with analytical and problem-solving skills. I excel in <b>automating back-end processes</b>, gathering raw data by <b>utilizing APIs</b>, and defining </b>Machine Learning models with visual animations</b>. My experience at USD, Zenatix, and Cognizant make me versatile in working <em>independently</em> as well as a <i>team player</i>.</p>
+                    {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}<i>resumé</i>{{< /staticref >}}
+                  <a href="https://drive.google.com/drive/folders/1ax3GNom6oV6kqe4vubMIsGD5AwTUXgU7"><i> Verify my Certifications</i></a>
               </div>
           </div>
       </section>

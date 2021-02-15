@@ -28,6 +28,17 @@ Please bear with me, I am still learning to develop a website. :stuck_out_tongue
 
 Meanwhile, jump into my projects at [Github](https://github.com/jamwine).
 
+ <!-- home section start -->
+  <section class="home" id="home">
+          <div class="max-width">
+              <div class="home-content">
+                  <div class="text-3">This PROJECT section is <span class="typing-2">.</span></div>
+                  {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+                  <a href="https://drive.google.com/drive/folders/1ax3GNom6oV6kqe4vubMIsGD5AwTUXgU7"> Verify my Certifications</a>
+              </div>
+          </div>
+      </section>
+
 <style>
   .center {
     display: block;
