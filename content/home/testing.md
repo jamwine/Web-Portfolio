@@ -194,7 +194,7 @@ section .title::after{
     width: 55%;
 }
 .about .about-content .text{
-    font-size: 33px;
+    font-size: 27px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -799,14 +799,14 @@ I am always up for:
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Software Engineer", "Python Developer", "Data Scientist", "Open Source Contributor"],
+        strings: ["Software Engineer", "Python Developer", "Data Scientist"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["COMING SOON"],
+        strings: ["COMING SOON","COMING SOON","COMING SOON"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
