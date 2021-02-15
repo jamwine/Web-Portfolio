@@ -191,7 +191,7 @@ section .title::after{
 }
 
 .about .about-content{
-    width: 55%;
+    width: 95%;
 }
 .about .about-content .text{
     font-size: 27px;
@@ -201,14 +201,15 @@ section .title::after{
 .about .about-content .text span{
     color: #31669b;
 }
-.about .about-content p{
+ .about .about-content p{
     text-align: justify;
-}
+} 
+
 .about .about-content a{
     display: inline-block;
     background: #31669b;
     color: #fff;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 300;
     padding: 5px 10px;
     margin-top: 5px;
@@ -506,11 +507,11 @@ footer span a:hover{
     </div>
 
 <!-- skills section start -->
-   <section class="skills" id="skills">
+   <section class="skills">
           <div class="max-width">
               <h2 class="title">Data Professional</h2>
               <div class="skills-content">
-              <div class="text">My creative ARSENAL</div>
+              <!-- <div class="text">My creative ARSENAL</div> -->
                   <div class="column left">
                       <div class="bars">
                           <div class="info">
@@ -562,7 +563,7 @@ footer span a:hover{
                           </div>
                           <div class="line ws"></div>
                       </div>
-                      <div class="text">& DOMAIN Area</div>
+                      <!-- <div class="text">& DOMAIN Area</div> -->
                   </div>
               </div>
           </div>
