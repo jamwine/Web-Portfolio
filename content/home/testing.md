@@ -10,14 +10,14 @@ active: true
 headless: true
 
 # Order that this section appears on the page.
-weight: 52
+weight: 15
 
 design:
 # Choose how many columns the section has. Valid values: 1 or 2.
   columns: "1"
 
 # ... Put Your Section Options Here (title etc.) ...
-title: Testing
+title:
 ---
 
 <style>
@@ -210,10 +210,10 @@ section .title::after{
     color: #fff;
     font-size: 10px;
     font-weight: 300;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #31669b;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #31669b;
     transition: all 0.3s ease;
 }
 .about .about-content a:hover{
@@ -277,7 +277,7 @@ section .title::after{
 }
 .skills .skills-content .text{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 300;
     margin-bottom: 10px;
 }
 .skills .skills-content .left .bars,
@@ -330,47 +330,7 @@ section .title::after{
 }
 
 
-/* teams section styling */
-.teams .title::after{
-    content: "who with me";
-}
-.teams .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover{
-    background: #31669b;
-}
-.teams .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-.teams .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.teams .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #31669b;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover img{
-    border-color: #fff;
-}
+
 .owl-dots{
     text-align: center;
     margin-top: 20px;
@@ -391,103 +351,6 @@ section .title::after{
 .owl-dot.active,
 .owl-dot:hover{
     background: #31669b!important;
-}
-
-/* contact section styling */
-.contact .title::after{
-    content: "get in touch";
-}
-.contact .contact-content .column{
-    width: calc(50% - 30px);
-}
-.contact .contact-content .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.contact .contact-content .left p{
-    text-align: justify;
-}
-.contact .contact-content .left .icons{
-    margin: 10px 0;
-}
-.contact .contact-content .row{
-    display: flex;
-    height: 65px;
-    align-items: center;
-}
-.contact .contact-content .row .info{
-    margin-left: 30px;
-}
-.contact .contact-content .row i{
-    font-size: 25px;
-    color: #31669b;
-}
-.contact .contact-content .info .head{
-    font-weight: 500;
-}
-.contact .contact-content .info .sub-title{
-    color: #333;
-}
-.contact .right form .fields{
-    display: flex;
-}
-.contact .right form .field,
-.contact .right form .fields .field{
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-.contact .right form .textarea{
-    height: 80px;
-    width: 100%;
-}
-.contact .right form .name{
-    margin-right: 10px;
-}
-.contact .right form .email{
-    margin-left: 10px;  
-}
-.contact .right form .field input,
-.contact .right form .textarea textarea{
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
-}
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
-}
-.contact .right form .textarea textarea{
-    padding-top: 10px;
-    resize: none;
-}
-.contact .right form .button{
-    height: 47px;
-    width: 170px;
-}
-.contact .right form .button button{
-    width: 100%;
-    height: 100%;
-    border: 2px solid #31669b;
-    background: #31669b;
-    color: #fff;
-    outline: none;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.contact .right form .button button:hover{
-    color: #31669b;
-    background: none;
 }
 
 /* footer section styling */
@@ -568,17 +431,7 @@ footer span a:hover{
     .max-width{
         max-width: 930px;
     }
-    .about .about-content .column{
-        width: 100%;
-    }
-    .about .about-content .left{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-    }
-    .about .about-content .right{
-        flex: 100%;
-    }
+    
     .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
@@ -651,14 +504,13 @@ footer span a:hover{
    <div class="scroll-up-btn">
           <i class="fas fa-angle-up"></i>
     </div>
-    
 
 <!-- skills section start -->
    <section class="skills" id="skills">
           <div class="max-width">
               <h2 class="title">Data Professional</h2>
               <div class="skills-content">
-              <div class="text">My creative skills & experiences</div>
+              <div class="text">My creative ARSENAL</div>
                   <div class="column left">
                       <div class="bars">
                           <div class="info">
@@ -710,11 +562,11 @@ footer span a:hover{
                           </div>
                           <div class="line ws"></div>
                       </div>
+                      <div class="text">& DOMAIN Area</div>
                   </div>
               </div>
           </div>
       </section>
-
 
 <!-- I am always up for:
  - a cup of delicious coffee
@@ -729,11 +581,7 @@ footer span a:hover{
  - Logo Designing
  - Traveling (*obviously* :sweat_smile:) -->
 
-
-
-
-<script>
-  
+<script>  
   $(document).ready(function(){
       $(window).scroll(function(){
         // sticky navbar on scroll script
