@@ -741,7 +741,7 @@ footer span a:hover{
       </section>
 
 
-I am always up for:
+<!-- I am always up for:
  - a cup of delicious coffee
  - dark chocolates
  - discovering new music: [J A M W I N E](https://jam-wine.tumblr.com/)
@@ -752,7 +752,7 @@ I am always up for:
  - Coursera MOOCs
  - discussion about new gadgets and PC configurations
  - Logo Designing
- - Traveling (*obviously* :sweat_smile:)
+ - Traveling (*obviously* :sweat_smile:) -->
 
 
 
@@ -790,7 +790,7 @@ I am always up for:
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Software Engineer", "Python Developer", "Data Scientist","Open Source Contributor"],
+        strings: ["Software Engineer", "Python Developer", "Data Scientist"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
