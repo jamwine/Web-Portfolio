@@ -280,44 +280,30 @@ section .title::after{
     font-weight: 600;
     margin-bottom: 10px;
 }
-.skills .skills-content .left p{
-    text-align: justify;
-}
-.skills .skills-content .left a{
-    display: inline-block;
-    background: #31669b;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #31669b;
-    transition: all 0.3s ease;
-}
-.skills .skills-content .left a:hover{
-    color: #31669b;
-    background: none;
-}
+.skills .skills-content .left .bars,
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
 }
+.skills .skills-content .left .info,
 .skills .skills-content .right .info{
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
+.skills .skills-content .left .span,
 .skills .skills-content .right span{
     font-weight: 500;
     font-size: 18px;
 }
+.skills .skills-content .left .line,
 .skills .skills-content .right .line{
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
 }
+.skills .skills-content .left .line::before,
 .skills .skills-content .right .line::before{
     content: "";
     position: absolute;
@@ -326,18 +312,23 @@ section .title::after{
     top: 0;
     background: #31669b;
 }
+.skills-content .left .html::before,
 .skills-content .right .html::before{
     width: 90%;
 }
+.skills-content .left .css::before,
 .skills-content .right .css::before{
     width: 60%;
 }
+.skills-content .left .js::before,
 .skills-content .right .js::before{
     width: 80%;
 }
+.skills-content .left .php::before,
 .skills-content .right .php::before{
     width: 50%;
 }
+.skills-content .left .mysql::before,
 .skills-content .right .mysql::before{
     width: 70%;
 }
