@@ -89,7 +89,7 @@ show_related = {book = true, page = false, post = true, project = true, publicat
 
 # Enter contact details (optional). To hide a field, clear it to "".
 email = "shauryakhurana0@gmail.com"
-phone = "+1 6052029181"
+phone = ""
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
@@ -97,7 +97,7 @@ address = {street = "805 N Plum St.", city = "Vermillion", region = "SD", postco
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "42.7881", longitude = "-96.9196"}
+# coordinates = {latitude = "42.7881", longitude = "-96.9196"}
 
 # Directions for visitors to locate you.
 directions = ""

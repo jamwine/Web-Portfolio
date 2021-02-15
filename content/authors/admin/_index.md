@@ -78,6 +78,36 @@ email: ""
 highlight_name: false
 ---
 
+<!-- home section start -->
+  <section class="home" id="home">
+          <div class="max-width">
+              <div class="home-content">
+                  <div class="text-1">Hello, my name is</div>
+                  <div class="text-2">SHAURYA KHURANA</div>
+                  <div class="text-3">And I'm a <span class="typing"></span></div>
+                  <a href="#">Hire me</a>
+              </div>
+          </div>
+      </section>
+
+  <!-- about section start -->
+   <section class="about" id="about">
+          <div class="max-width">
+              <h2 class="title">About me</h2>
+              <div class="about-content">
+                  <div class="column left">
+                      <img src="images/profile-1.jpeg" alt="">
+                  </div>
+                  <div class="column right">
+                      <div class="text">I'm Prakash and I'm a <span class="typing-2"></span></div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+                      <a href="#">Download CV</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
 I am a Software Engineer with a master's in Computer Science and 4+ years of professional experience in working towards **data analysis** and **defining data-driven models** for actionable insights. I have a strong mathematical background with analytical and problem-solving skills. I excel in **automating back-end processes**, gathering raw data by **utilizing APIs**, and defining **Machine Learning models with visual animations**. My experience at USD, Zenatix, and Cognizant make me versatile in working *independently* as well as a *team player*.
 
 
