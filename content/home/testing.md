@@ -210,6 +210,7 @@ section .title::after{
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
+    color: black;
 }
 .home .home-content .text-3 span{
     color: crimson;
@@ -786,49 +787,7 @@ footer span a:hover{
           </div>
       </section>
 
-   <!-- teams section start -->
-   <section class="teams" id="teams">
-          <div class="max-width">
-              <h2 class="title">My teams</h2>
-              <div class="carousel owl-carousel">
-                  <div class="card">
-                      <div class="box">
-                          <img src="images/profile-1.jpeg" alt="">
-                          <div class="text">Someone name</div>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      </div>
-                  </div>
-                  <div class="card">
-                      <div class="box">
-                          <img src="images/profile-2.jpeg" alt="">
-                          <div class="text">Someone name</div>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      </div>
-                  </div>
-                  <div class="card">
-                      <div class="box">
-                          <img src="images/profile-3.jpeg" alt="">
-                          <div class="text">Someone name</div>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      </div>
-                  </div>
-                  <div class="card">
-                      <div class="box">
-                          <img src="images/profile-4.jpeg" alt="">
-                          <div class="text">Someone name</div>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      </div>
-                  </div>
-                  <div class="card">
-                      <div class="box">
-                          <img src="images/profile-5.jpeg" alt="">
-                          <div class="text">Someone name</div>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
+
 
 <script>
   
@@ -859,12 +818,6 @@ footer span a:hover{
     $('.navbar .menu li a').click(function(){
         // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
-    });
-
-    // toggle menu/navbar script
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
     });
 
     // typing text animation script
