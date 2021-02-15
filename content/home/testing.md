@@ -96,15 +96,13 @@ title:
  - Logo Designing
  - Traveling (*obviously* :sweat_smile:) -->
 
-<!DOCTYPE html>
-<meta charset="utf-8">
 
 <!-- Load d3.js -->
 <script src="https://d3js.org/d3.v4.js"></script>
 
 <!-- Create a div where the graph will take place -->
-<div id="my_dataviz"></div>
-<div id="my_dataviz2"></div>
+<div id="my_dataviz" style="width: 20%; float:left"></div>
+<div id="my_dataviz2" style="width: 80%; float:right"></div>
 
 <script>
 
