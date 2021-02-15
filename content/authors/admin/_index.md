@@ -84,6 +84,7 @@ highlight_name: false
               <h2 class="title">About me</h2>
               <div class="about-content">
                       <div class="text">I'm a <span class="typing"></span></div>
+                      <br/>
                       <p>I have a MS degree in Computer Science and 4+ years of professional experience in working towards <b>data analysis</b> and <b>defining data-driven models</b> for actionable insights. I have a <b>strong mathematical background</b> with analytical and problem-solving skills. I excel in <b>automating back-end processes</b>, gathering raw data by <b>utilizing APIs</b>, and defining </b>Machine Learning models with visual animations</b>. My experience at USD, Zenatix, and Cognizant make me versatile in working <em>independently</em> as well as a <i>team player</i>.</p>
                     {{< staticref "media/resume.pdf" "newtab" >}}<i>Download my resumé</i>{{< /staticref >}}
                   <a href="https://drive.google.com/drive/folders/1ax3GNom6oV6kqe4vubMIsGD5AwTUXgU7"><i> Verify my Certifications</i></a>
@@ -91,6 +92,69 @@ highlight_name: false
           </div>
       </section>
 
+
+<!-- skills section start -->
+   <section class="skills">
+          <div class="max-width">
+              <h2 class="title">Data Professional</h2>
+              <div class="skills-content">
+              <!-- <div class="text">My creative ARSENAL</div> -->
+                  <div class="column left">
+                      <div class="bars">
+                          <div class="info">
+                              <span>Machine Learning and Artificial Intelligence</span>
+                          </div>
+                          <div class="line ml"></div>
+                      </div>
+                      <div class="bars">
+                          <div class="info">
+                              <span>Trend Analysis and Predictive Analytics</span>
+                          </div>
+                          <div class="line trend"></div>
+                      </div>
+                      <div class="bars">
+                          <div class="info">
+                              <span>Data Structures & Algorithms</span>
+                          </div>
+                          <div class="line ds"></div>
+                      </div>
+                      <div class="bars">
+                          <div class="info">
+                              <span>Computer Vision techniques</span>
+                          </div>
+                          <div class="line cv"></div>
+                      </div>
+                  </div>
+                  <div class="column right">
+                      <div class="bars">
+                          <div class="info">
+                              <span>Statistical Modeling and Feature Engineering</span>
+                          </div>
+                          <div class="line sm"></div>
+                      </div>
+                      <div class="bars">
+                          <div class="info">
+                              <span>Data Science and Information Visualization</span>
+                          </div>
+                          <div class="line iv"></div>
+                      </div>
+                      <div class="bars">
+                          <div class="info">
+                              <span>Deep Learning models</span>
+                          </div>
+                          <div class="line dl"></div>
+                      </div>
+                      <div class="bars">
+                          <div class="info">
+                              <span>Web Scraping and Data Mining</span>
+                          </div>
+                          <div class="line ws"></div>
+                      </div>
+                      <!-- <div class="text">& DOMAIN Area</div> -->
+                  </div>
+              </div>
+          </div>
+      </section>
 <!-- {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}. -->
 
 <!-- {{< icon name="download" pack="fas" >}} Verify my [Certifications](https://drive.google.com/drive/folders/1ax3GNom6oV6kqe4vubMIsGD5AwTUXgU7) -->

@@ -38,7 +38,7 @@ Meanwhile, jump into my projects at [Github](https://github.com/jamwine).
           </div>
       </section>
 
-<!-- services section start -->
+<!-- services section start
    <section class="services" id="services">
           <div class="max-width">
               <h2 class="title">My services</h2>
@@ -67,4 +67,4 @@ Meanwhile, jump into my projects at [Github](https://github.com/jamwine).
                 </div>
               </div>
           </div>
-      </section>
+      </section> -->
