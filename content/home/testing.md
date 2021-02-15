@@ -97,15 +97,37 @@ title:
  - Traveling (*obviously* :sweat_smile:) -->
 
 
+<style>
+#content{
+    padding: 20px;
+    /* width: 500px;
+   height: 500px; */
+}
+.left{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 45%;
+    height: 100%;
+    margin-right: 50px;
+}
+.right{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 45%;
+    height: 100%;
+}
+</style>
+
 <!-- Load d3.js -->
 <script src="https://d3js.org/d3.v4.js"></script>
 
 <!-- Create a div where the graph will take place -->
-<div id="my_dataviz" style="width: 20%; float:left"></div>
-<div id="my_dataviz2" style="width: 80%; float:right"></div>
+<div id="content">
+    <div id="my_dataviz" class="left"></div>
+    <div id="my_dataviz2" class="right"></div>
+ </div>
 
 <script>
-
 
 // set the dimensions and margins of the graph
 var margin = {top: 10, right: 30, bottom: 90, left: 40},
