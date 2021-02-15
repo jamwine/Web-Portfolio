@@ -20,473 +20,130 @@ design:
 title: Testing
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-  <!-- <link rel="stylesheet" href="style.css"> -->
-
-  <style>
-
-    * {
-    margin: 0;
-    padding: 0
+<style>
+  .services{
+	height:600px;
+	background-color:#ffffff;
+	padding: 2% 10% 0px 10%;
   }
-
-  body {
-    width: 100%;
-    height: 100vh;
-    font-family: 'agency fb';
-    background: url('reindeer.png') no-repeat;
-    background-position: 50%;
+  .services-text p:nth-child(1){
+    font-family: calibri;
+    font-weight:bold;
+    color:#1d1c1c;
+    font-size:30px;
+    line-height:0px;
+  }
+  .services-text p:nth-child(2){
+    font-family:calibri;
+    font-weight: bold;
+    color:#3e3d3d;
+    font-size: 15px;
+    line-height: 5px;
+  }
+  .services-text p:nth-child(3){font-family:calibri;
+  color:#7e7d7d;
+  font-size: ;}
+  .services-text{
+    width: 500px;
+    margin:50px 0px;
+  }
+  .box-container{
+    display:flex;
+    justify-content:space-between;
+  }
+  .box-1,.box-2,.box-3{
+    width: 300px;
+    height:320px;
+    background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
-  }
-
-  ul {
-    list-style: none;
-  }
-
-  .nav {
-    width: 200px;
-    height: 100vh;
+    box-shadow:2px 2px 18px rgba(0,0,0,0.3);
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    margin: 0px 4px;
   }
 
-  .logo {
-    flex: 0 0 50%;
-    background: #FFEB00;
+  .box-1{
+    background-image:url("../images/services-1.png");
+  }
+  .box-2{
+    background-image:url("../images/services-2.png");
+  }
+  .box-3{
+    background-image: url("../images/servies-3.png");
+  }
+  .box-1 span,
+  .box-2 span,
+  .box-3 span{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color:#ffffff;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items:center;
+    font-family: calibri;
+    font-weight: bold;
   }
-
-  .logo h1 {
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 16px;
-    line-height: 2;
+  .box-1 p:nth-child(2),
+  .box-2 p:nth-child(2),
+  .box-3 p:nth-child(2){
+    color:#FFFFFF;
+    font-family: calibri;
+    font-size: 23px;
+    line-height:0px;
   }
-
-  .logo span {
-    font-size: 60px;
-    line-height: 1;
+  .box-1 p:nth-child(3),
+  .box-2 p:nth-child(3),
+  .box-3 p:nth-child(3){
+    font-family: calibri;
+    color:#8F8F8F;
+    text-align:center;
+    width: 230px;
+    margin:0px 0px 20px 0px;
   }
-
-  .menu-links {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    text-align: right;
-    padding-top: 50px;
+  .box-1 button,
+  .box-2 button,
+  .box-3 button{
+    width:100px;
+    height:30px;
+    background-color:#FFFFFF;
+    border:none;
+    outline: none;
+    border-radius:5px;
   }
-
-  .menu-links ul {
-    width: 100%;
-  }
-
-  .menu-links ul li {
-    padding: 10px;
-    color: #494949;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-  }
-
-  .menu-links ul li:hover {
-    background: #494949;
-    color: #fff;
-  }
-
-  .scrolldown {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    transform: rotate(-90deg);
-  }
-
-  .scrolldown::before {
-    display: inline-block;
-    content: "";
-    border-top: 1px solid #000;
-    width: 65px;
-    margin: 0 10px 0 0;
-    transform: translateY(10px);
-  }
-
-  .text {
-    position: absolute;
-    top: 25%;
-    right: 180px;
-    transform: translateY(-50%);
-    text-align: right;
-    color: #494949;
-  }
-
-  .text .title {
-    font-size: 150px;
-  }
-
-  .watchnow {
-    position: absolute;
-    top: 60%;
-    right: 0;
-    transform: translateY(-50%);
-    background: #FFEB00;
-    padding: 30px 180px 30px 30px;
-  }
-
-  .watchnow a {
-    text-decoration: none;
-    color: #000;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-bottom: 3px solid #000;
-    padding-bottom: 5px;
-  }
-
-  .fa-play {
-    color: #fff;
-    font-size: 30px;
-    margin-right: 20px;
-    cursor: pointer;
-  }
-
-  .media {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 20px;
-  }
-
-  .media ul li {
-    display: inline-block;
-    padding: 20px;
-    font-size: 20px;
-    color: #494949;
-    cursor: pointer;
-    border-radius: 50%;
-  }
-
-  .media ul li:hover {
-    background: #FFEB00;
-  }
-
-  .ellipse-container {
-    width: 608px;
-    height: 608px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    margin: 0 auto;
-    z-index: -1;
-  }
-
-  .ellipse {
-    position: absolute;
-    top: 0;
-    border-radius: 50%;
-    border-style: solid;
-  }
-
-  .ellipse.thin {
-    width: 100%;
-    height: 100%;
-    border-width: 1px;
-    border-color: #494949;
-    opacity: .5;
-  }
-
-  .ellipse.thick {
-    width: 93%;
-    height: 93%;
-    border-width: 10px;
-    border-color: #fff;
-    transform: rotate(-45deg);
-    top: 12px;
-    left: 12px;
-  }
-
-  .ellipse.yellow {
-    width: 93%;
-    height: 93%;
-    border-width: 10px;
-    border-color: #FFEB00 transparent;
-    transform: rotate(-45deg);
-    top: 12px;
-    left: 12px;
-    animation: ellipseRotate 15s ease-in-out infinite;
-  }
-
-  @keyframes ellipseRotate {
-    0% {
-      transform: rotate(-45deg);
-    }
-    100% {
-      transform: rotate(-405deg);
-    }
-  }
-
-  .circle1,
-  .circle2 {
-    border-style: solid;
-    width: 64px;
-    height: 64px;
-    border-width: 1px;
-    border-color: rgba(0,0,0,.5);
-    border-radius: 50%;
-    position: absolute;
-  }
-
-  .circle1 {
-    top: 150px;
-    left: 150px;
-  }
-
-  .circle2 {
-    bottom: 150px;
-    right: 130px;
-  }
-
-  .circle1::before,
-  .circle1::after,
-  .circle2::before,
-  .circle2::after {
-    content: '';
-    border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .circle1::before,
-  .circle2::before {
-    width: 12px;
-    height: 12px;
-    background: #fff;
-    z-index: 1;
-  }
-
-  .circle1::after,
-  .circle2::after {
-    width: 40px;
-    height: 40px;
-    background: #FFEB00;
-  }
-
-  .circle1 span,
-  .circle2 span {
-    position: absolute;
-    top: 25px;
-    width: 100px;
-    font-size: 14px;
-  }
-
-  .circle1 span {
-    left: 75px;
-  }
-
-  .circle2 span {
-    left: -90px;
-  }
-
-  .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background: #FFEB00;
-    top: 0%;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .overlay h1 {
-    font-size: 100px;
-    letter-spacing: 20px;
-  }
-
-  .overlay span {
-    font-size: 30px;
-    letter-spacing: 3px;
-  }
-
 </style>
 
+<div class="services ">
+		<!--text-->
+		<div class="services-text ">
+	<p>Services</p>
+	<p>Qualites Requaid</p>
+	<p>if you want make a software for your bussniess conatact me.I make as soon as possibale.You really like my work, if you don&#8217;t i change this until you like if you want make a software for your bussniess conatact me.I make as soon</p>
+			</div>
+		<div class="box-container">
+		<!--1------------->
+			<div class="box-1">
+			<span>1</span>
+			<p class="heading">Web Design</p>
+			<p class="details">if you want make a software for your bussniess conatact me.I make as soon as possibale.You really like my work, if you don&#8217;t i change this until you like if you want.</p>
+			<button>Read More</button>
+			</div>
+	   <!--2------------->
+			<div class="box-2">
+			<span>2</span>
+			<p class="heading">Web Devoloment</p>
+			<p class="details">if you want make a software for your bussniess conatact me.I make as soon as possibale.You really like my work, if you don&#8217;t i change this until you like if you want.</p>
+			<button>Read More</button>
+			</div>
+		<!--3------------->
+			<div class="box-3">
+			<span>3</span>
+			<p class="heading">Security SEO</p>
+			<p class="details">if you want make a software for your bussniess conatact me.I make as soon as possibale.You really like my work, if you don&#8217;t i change this until you like if you want.</p>
+			<button>Read More</button>
+			</div>
+		</div>
+	</div>
 
-
-  <title>Reindeer</title>
-</head>
-
-<body>
-
-  <div class="overlay">
-    <h1>Reindeer</h1>
-    <span>snow life</span>
-  </div>
-
-  <div class="wrapper">
-
-    <div class="nav">
-      <div class="logo">
-        <h1>
-          <span>rein <br> deer</span>
-          <br>
-          snow life
-        </h1>
-      </div>
-
-      <div class="menu-links">
-        <ul>
-          <li>home.</li>
-          <li>snow life.</li>
-          <li>contact.</li>
-        </ul>
-      </div>
-
-      <div class="scrolldown">scroll</div>
-    </div>
-
-    <div class="text">
-      <div class="title">reindeer</div>
-      <p>Mauris elementum, dui ac sagittis <br> cursus, libero elit sodales odio</p>
-    </div>
-
-    <div class="watchnow">
-      <i class="fa fa-play"></i>
-      <a href="#">watch now!</a>
-    </div>
-
-    <div class="media">
-      <ul>
-        <li><i class="fa fa-facebook"></i></li>
-        <li><i class="fa fa-twitter"></i></li>
-        <li><i class="fa fa-instagram"></i></li>
-      </ul>
-    </div>
-
-    <div class="ellipse-container">
-      <div class="ellipse thin"></div>
-      <div class="ellipse thick"></div>
-      <div class="ellipse yellow"></div>
-      <div class="circle1"><span>Maecenas purus at</span></div>
-      <div class="circle2"><span>Fringilla Maecenas</span></div>
-    </div>
-
-  </div>
-
-  <script>
-
-    TweenMax.to(".overlay h1", 2, {
-      opacity: 0,
-      y: -60,
-      ease: Expo.easeInOut
-    })
-
-    TweenMax.to(".overlay span", 2, {
-      delay: .3,
-      opacity: 0,
-      y: -60,
-      ease: Expo.easeInOut
-    })
-
-    TweenMax.to(".overlay", 2, {
-      delay: 1,
-      top: "-100%",
-      ease: Expo.easeInOut
-    })
-
-    TweenMax.from(".ellipse-container", 1, {
-      delay: 2,
-      opacity: 0,
-      ease: Expo.easeInOut
-    })
-
-    TweenMax.from(".yellow", 1, {
-      delay: 3.5,
-      opacity: 0,
-      ease: Expo.easeInOut
-    })
-
-    TweenMax.from(".circle1", 1, {
-      delay: 2.4,
-      opacity: 0,
-      ease: Expo.easeInOut
-    })
-
-    TweenMax.from(".circle2", 1, {
-      delay: 2.6,
-      opacity: 0,
-      ease: Expo.easeInOut
-    })
-
-    TweenMax.from(".logo", 1, {
-      delay: 3,
-      opacity: 0,
-      y: -100,
-      ease: Expo.easeInOut
-    })
-
-    TweenMax.staggerFrom(".menu-links ul li", 1, {
-      delay: 3.2,
-      opacity: 0,
-      x: -100,
-      ease: Expo.easeInOut
-    }, 0.08)
-
-    TweenMax.from(".scrolldown", 1, {
-      delay: 3.4,
-      opacity: 0,
-      y: 100,
-      ease: Expo.easeInOut
-    })
-
-    TweenMax.from(".text .title", 1, {
-      delay: 3,
-      opacity: 0,
-      x: 200,
-      ease: Expo.easeInOut
-    })
-
-    TweenMax.from(".text p", 1, {
-      delay: 3.2,
-      opacity: 0,
-      x: 200,
-      ease: Expo.easeInOut
-    })
-
-    TweenMax.from(".watchnow", 1, {
-      delay: 3.4,
-      opacity: 0,
-      x: 200,
-      ease: Expo.easeInOut
-    })
-
-    TweenMax.staggerFrom(".media ul li", 1, {
-      delay: 3,
-      opacity: 0,
-      y: 100,
-      ease: Expo.easeInOut
-    }, 0.08)
-
-  </script>
-</body>
-
-</html>
