@@ -96,21 +96,26 @@ title:
  - Logo Designing
  - Traveling (*obviously* :sweat_smile:) -->
 
-<!-- Add a svg area, empty -->
-<div id="scatter_area"></div>
+<!DOCTYPE html>
+<meta charset="utf-8">
 
 <!-- Load d3.js -->
 <script src="https://d3js.org/d3.v4.js"></script>
 
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
+<div id="my_dataviz2"></div>
+
 <script>
 
+
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 40, bottom: 30, left: 30},
-    width = 450 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+var margin = {top: 10, right: 30, bottom: 90, left: 40},
+    width = 460 - margin.left - margin.right,
+    height = 450 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
-var svG = d3.select("#scatter_area")
+var svg = d3.select("#my_dataviz")
   .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -118,35 +123,125 @@ var svG = d3.select("#scatter_area")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
-// Create data
-var data = [ {x:10, y:20}, {x:40, y:90}, {x:80, y:50} ]
+// Parse the Data
+d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/7_OneCatOneNum_header.csv", function(data) {
 
-// X scale and Axis
-var x = d3.scaleLinear()
-    .domain([0, 100])         // This is the min and the max of the data: 0 to 100 if percentages
-    .range([0, width]);       // This is the corresponding value I want in Pixel
-svG
-  .append('g')
+// X axis
+var x = d3.scaleBand()
+  .range([ 0, width ])
+  .domain(data.map(function(d) { return d.Country; }))
+  .padding(0.2);
+svg.append("g")
   .attr("transform", "translate(0," + height + ")")
-  .call(d3.axisBottom(x));
+  .call(d3.axisBottom(x))
+  .selectAll("text")
+    .attr("transform", "translate(-10,0)rotate(-45)")
+    .style("text-anchor", "end");
 
-// X scale and Axis
+// Add Y axis
 var y = d3.scaleLinear()
-    .domain([0, 100])         // This is the min and the max of the data: 0 to 100 if percentages
-    .range([height, 0]);       // This is the corresponding value I want in Pixel
-svG
-  .append('g')
+  .domain([0, 13000])
+  .range([ height, 0]);
+svg.append("g")
   .call(d3.axisLeft(y));
 
-// Add 3 dots for 0, 50 and 100%
-svG
-  .selectAll("whatever")
+// Bars
+svg.selectAll("mybar")
+  .data(data)
+  .enter()
+  .append("rect")
+    .attr("x", function(d) { return x(d.Country); })
+    .attr("width", x.bandwidth())
+    .attr("fill", "#69b3a2")
+    // no bar at the beginning thus:
+    .attr("height", function(d) { return height - y(0); }) // always equal to 0
+    .attr("y", function(d) { return y(0); })
+
+// Animation
+svg.selectAll("rect")
+  .transition()
+  .duration(800)
+  .attr("y", function(d) { return y(d.Value); })
+  .attr("height", function(d) { return height - y(d.Value); })
+  .delay(function(d,i){console.log(i) ; return(i*100)})
+
+})
+
+
+// set the dimensions and margins of the graph
+var margin = {top: 10, right: 30, bottom: 40, left: 100},
+    width = 460 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+// append the svg object to the body of the page
+var svg = d3.select("#my_dataviz2")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+// Parse the Data
+d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/7_OneCatOneNum_header.csv", function(data) {
+
+// sort data
+data.sort(function(b, a) {
+  return a.Value - b.Value;
+});
+
+// Add X axis
+var x = d3.scaleLinear()
+  .domain([0, 13000])
+  .range([ 0, width]);
+svg.append("g")
+  .attr("transform", "translate(0," + height + ")")
+  .call(d3.axisBottom(x))
+  .selectAll("text")
+    .attr("transform", "translate(-10,0)rotate(-45)")
+    .style("text-anchor", "end");
+
+// Y axis
+var y = d3.scaleBand()
+  .range([ 0, height ])
+  .domain(data.map(function(d) { return d.Country; }))
+  .padding(1);
+svg.append("g")
+  .call(d3.axisLeft(y))
+
+// Lines
+svg.selectAll("myline")
+  .data(data)
+  .enter()
+  .append("line")
+    .attr("x1", x(0))
+    .attr("x2", x(0))
+    .attr("y1", function(d) { return y(d.Country); })
+    .attr("y2", function(d) { return y(d.Country); })
+    .attr("stroke", "grey")
+
+// Circles -> start at X=0
+svg.selectAll("mycircle")
   .data(data)
   .enter()
   .append("circle")
-    .attr("cx", function(d){ return x(d.x) })
-    .attr("cy", function(d){ return y(d.y) })
-    .attr("r", 7)
+    .attr("cx", x(0) )
+    .attr("cy", function(d) { return y(d.Country); })
+    .attr("r", "7")
+    .style("fill", "#69b3a2")
+    .attr("stroke", "black")
 
+// Change the X coordinates of line and circle
+svg.selectAll("circle")
+  .transition()
+  .duration(2000)
+  .attr("cx", function(d) { return x(d.Value); })
+
+svg.selectAll("line")
+  .transition()
+  .duration(2000)
+  .attr("x1", function(d) { return x(d.Value); })
+
+})
 
 </script>
