@@ -194,9 +194,9 @@ section .title::after{
     width: 55%;
 }
 .about .about-content .text{
-    font-size: 26px;
-    font-weight: 400;
-    margin-bottom: 6px;
+    font-size: 27px;
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 .about .about-content .text span{
     color: #31669b;
@@ -210,10 +210,10 @@ section .title::after{
     color: #fff;
     font-size: 10px;
     font-weight: 300;
-    padding: 5px 15px;
-    margin-top: 10px;
-    border-radius: 3px;
-    border: 1px solid #31669b;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #31669b;
     transition: all 0.3s ease;
 }
 .about .about-content a:hover{
@@ -799,7 +799,7 @@ I am always up for:
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Software Engineer", "Python Developer", "Data Scientist"],
+        strings: ["Software Engineer", "Python Developer", "Data Scientist","Open Source Contributor"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
