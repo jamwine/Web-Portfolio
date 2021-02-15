@@ -275,7 +275,7 @@ section .title::after{
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
-.skills .skills-content .left .text{
+.skills .skills-content .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -312,26 +312,23 @@ section .title::after{
     top: 0;
     background: #31669b;
 }
-.skills-content .left .html::before,
-.skills-content .right .html::before{
+.skills-content .left .ml::before,
+.skills-content .right .sm::before{
     width: 90%;
 }
-.skills-content .left .css::before,
-.skills-content .right .css::before{
-    width: 60%;
+.skills-content .left .trend::before,
+.skills-content .right .iv::before{
+    width: 95%;
 }
-.skills-content .left .js::before,
-.skills-content .right .js::before{
+.skills-content .left .ds::before,
+.skills-content .right .dl::before{
+    width: 85%;
+}
+.skills-content .left .cv::before,
+.skills-content .right .ws::before{
     width: 80%;
 }
-.skills-content .left .php::before,
-.skills-content .right .php::before{
-    width: 50%;
-}
-.skills-content .left .mysql::before,
-.skills-content .right .mysql::before{
-    width: 70%;
-}
+
 
 /* teams section styling */
 .teams .title::after{
@@ -661,79 +658,57 @@ footer span a:hover{
           <div class="max-width">
               <h2 class="title">Data Professional</h2>
               <div class="skills-content">
+              <div class="text">My creative skills & experiences</div>
                   <div class="column left">
-                      <div class="text">My creative skills & experiences.</div>
                       <div class="bars">
                           <div class="info">
-                              <span>HTML</span>
-                              <span>90%</span>
+                              <span>Machine Learning and Artificial Intelligence</span>
                           </div>
-                          <div class="line html"></div>
+                          <div class="line ml"></div>
                       </div>
                       <div class="bars">
                           <div class="info">
-                              <span>CSS</span>
-                              <span>60%</span>
+                              <span>Trend Analysis and Predictive Analytics</span>
                           </div>
-                          <div class="line css"></div>
+                          <div class="line trend"></div>
                       </div>
                       <div class="bars">
                           <div class="info">
-                              <span>JavaScript</span>
-                              <span>80%</span>
+                              <span>Data Structures & Algorithms</span>
                           </div>
-                          <div class="line js"></div>
+                          <div class="line ds"></div>
                       </div>
                       <div class="bars">
                           <div class="info">
-                              <span>PHP</span>
-                              <span>50%</span>
+                              <span>Computer Vision techniques</span>
                           </div>
-                          <div class="line php"></div>
-                      </div>
-                      <div class="bars">
-                          <div class="info">
-                              <span>MySQL</span>
-                              <span>70%</span>
-                          </div>
-                          <div class="line mysql"></div>
+                          <div class="line cv"></div>
                       </div>
                   </div>
                   <div class="column right">
                       <div class="bars">
                           <div class="info">
-                              <span>HTML</span>
-                              <span>90%</span>
+                              <span>Statistical Modeling and Feature Engineering</span>
                           </div>
-                          <div class="line html"></div>
+                          <div class="line sm"></div>
                       </div>
                       <div class="bars">
                           <div class="info">
-                              <span>CSS</span>
-                              <span>60%</span>
+                              <span>Data Science and Information Visualization</span>
                           </div>
-                          <div class="line css"></div>
+                          <div class="line iv"></div>
                       </div>
                       <div class="bars">
                           <div class="info">
-                              <span>JavaScript</span>
-                              <span>80%</span>
+                              <span>Deep Learning models</span>
                           </div>
-                          <div class="line js"></div>
+                          <div class="line dl"></div>
                       </div>
                       <div class="bars">
                           <div class="info">
-                              <span>PHP</span>
-                              <span>50%</span>
+                              <span>Web Scraping and Data Mining</span>
                           </div>
-                          <div class="line php"></div>
-                      </div>
-                      <div class="bars">
-                          <div class="info">
-                              <span>MySQL</span>
-                              <span>70%</span>
-                          </div>
-                          <div class="line mysql"></div>
+                          <div class="line ws"></div>
                       </div>
                   </div>
               </div>
