@@ -97,42 +97,19 @@ title:
  - Traveling (*obviously* :sweat_smile:) -->
 
 
-<style>
-#content{
-    padding: 20px;
-    /* width: 500px;
-   height: 500px; */
-}
-.left{
-    display: inline-block;
-    box-sizing: border-box;
-    width: 45%;
-    height: 100%;
-    margin-right: 50px;
-}
-.right{
-    display: inline-block;
-    box-sizing: border-box;
-    width: 45%;
-    height: 100%;
-}
-</style>
-
 <!-- Load d3.js -->
 <script src="https://d3js.org/d3.v4.js"></script>
 
 <!-- Create a div where the graph will take place -->
-<div id="content">
-    <div id="my_dataviz" class="left"></div>
-    <div id="my_dataviz2" class="right"></div>
- </div>
+<div id="my_dataviz"></div>
+<div id="my_dataviz2"></div>
 
 <script>
 
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 30, bottom: 90, left: 40},
-    width = 460 - margin.left - margin.right,
-    height = 450 - margin.top - margin.bottom;
+var margin = {top: 10, right: 70, bottom: 10, left: 30},
+    width = 500 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
@@ -189,8 +166,8 @@ svg.selectAll("rect")
 
 
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 30, bottom: 40, left: 100},
-    width = 460 - margin.left - margin.right,
+var margin = {top: 10, right: 30, bottom: 10, left: 70},
+    width = 500 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
