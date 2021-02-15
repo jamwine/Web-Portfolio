@@ -100,54 +100,6 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* navbar styling */
-.navbar{
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
-}
-.navbar.sticky{
-    padding: 15px 0;
-    background: #31669b;
-}
-.navbar .max-width{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.navbar .logo a{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-}
-.navbar .logo a span{
-    color: #31669b;
-    transition: all 0.3s ease;
-}
-.navbar.sticky .logo a span{
-    color: #fff;
-}
-.navbar .menu li{
-    list-style: none;
-    display: inline-block;
-}
-.navbar .menu li a{
-    display: block;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-}
-.navbar .menu li a:hover{
-    color: #31669b;
-}
-.navbar.sticky .menu li a:hover{
-    color: #fff;
-}
 
 /* menu btn styling */
 .menu-btn{
@@ -249,18 +201,18 @@ section .title::after{
 .about .about-content .right{
     width: 55%;
 }
-.about .about-content .right .text{
+.about .about-content .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.about .about-content .right .text span{
+.about .about-content .text span{
     color: #31669b;
 }
-.about .about-content .right p{
+.about .about-content p{
     text-align: justify;
 }
-.about .about-content .right a{
+.about .about-content a{
     display: inline-block;
     background: #31669b;
     color: #fff;
@@ -272,7 +224,7 @@ section .title::after{
     border: 2px solid #31669b;
     transition: all 0.3s ease;
 }
-.about .about-content .right a:hover{
+.about .about-content a:hover{
     color: #31669b;
     background: none;
 }
@@ -683,7 +635,7 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 27px;
     }
-    .about .about-content .right .text,
+    .about .about-content .text,
     .skills .skills-content .left .text{
         font-size: 19px;
     }
@@ -718,32 +670,51 @@ footer span a:hover{
 
    <div class="scroll-up-btn">
           <i class="fas fa-angle-up"></i>
-      </div>
-      <nav class="navbar">
-          <div class="max-width">
-              <ul class="menu">
-                  <li><a href="#home" class="menu-btn">Home</a></li>
-                  <li><a href="#about" class="menu-btn">About</a></li>
-                  <li><a href="#services" class="menu-btn">Services</a></li>
-                  <li><a href="#skills" class="menu-btn">Skills</a></li>
-                  <li><a href="#teams" class="menu-btn">Teams</a></li>
-                  <li><a href="#contact" class="menu-btn">Contact</a></li>
-              </ul>
-              <div class="menu-btn">
-                  <i class="fas fa-bars"></i>
-              </div>
-          </div>
-      </nav>
+    </div>
+    
 
-   <!-- skills section start -->
+<!-- skills section start -->
    <section class="skills" id="skills">
           <div class="max-width">
-              <h2 class="title">My skills</h2>
+              <h2 class="title">Data Professional</h2>
               <div class="skills-content">
                   <div class="column left">
                       <div class="text">My creative skills & experiences.</div>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
-                      <a href="#">Read more</a>
+                      <div class="bars">
+                          <div class="info">
+                              <span>HTML</span>
+                              <span>90%</span>
+                          </div>
+                          <div class="line html"></div>
+                      </div>
+                      <div class="bars">
+                          <div class="info">
+                              <span>CSS</span>
+                              <span>60%</span>
+                          </div>
+                          <div class="line css"></div>
+                      </div>
+                      <div class="bars">
+                          <div class="info">
+                              <span>JavaScript</span>
+                              <span>80%</span>
+                          </div>
+                          <div class="line js"></div>
+                      </div>
+                      <div class="bars">
+                          <div class="info">
+                              <span>PHP</span>
+                              <span>50%</span>
+                          </div>
+                          <div class="line php"></div>
+                      </div>
+                      <div class="bars">
+                          <div class="info">
+                              <span>MySQL</span>
+                              <span>70%</span>
+                          </div>
+                          <div class="line mysql"></div>
+                      </div>
                   </div>
                   <div class="column right">
                       <div class="bars">
@@ -785,7 +756,6 @@ footer span a:hover{
               </div>
           </div>
       </section>
-
 
 
 <script>

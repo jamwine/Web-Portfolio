@@ -6,7 +6,7 @@ title: SHAURYA KHURANA
 superuser: true
 
 # Role/position/tagline
-role: Software Engineer
+role: 'To try, invites failure'
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -78,24 +78,13 @@ email: ""
 highlight_name: false
 ---
 
-<!-- home section start -->
-  <section class="home" id="home">
-          <div class="max-width">
-              <div class="home-content">
-                  <div class="text-3">I'm a <span class="typing"></span></div>
-                  {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
-                  <a href="https://drive.google.com/drive/folders/1ax3GNom6oV6kqe4vubMIsGD5AwTUXgU7"> Verify my Certifications</a>
-              </div>
-          </div>
-      </section>
-
   <!-- about section start -->
    <section class="about" id="about">
           <div class="max-width">
               <h2 class="title">About me</h2>
               <div class="about-content">
                       <div class="text">I'm Shaurya and I'm a <span class="typing-2"></span></div>
-                      <p>I am a Software Engineer with a master's in Computer Science and 4+ years of professional experience in working towards **data analysis** and **defining data-driven models** for actionable insights. I have a strong mathematical background with analytical and problem-solving skills. I excel in **automating back-end processes**, gathering raw data by **utilizing APIs**, and defining **Machine Learning models with visual animations**. My experience at USD, Zenatix, and Cognizant make me versatile in working *independently* as well as a *team player*.</p>
+                      <p>I have a MS degree in Computer Science and 4+ years of professional experience in working towards <bold>data analysis</bold> and <bold>defining data-driven models</bold> for actionable insights. I have a <bold>strong mathematical background</bold> with analytical and problem-solving skills. I excel in <bold>automating back-end processes</bold>, gathering raw data by <bold>utilizing APIs</bold>, and defining </bold>Machine Learning models with visual animations**. My experience at USD, Zenatix, and Cognizant make me versatile in working <em>independently</em> as well as a <i>team player<i>.</p>
               </div>
           </div>
       </section>
@@ -112,6 +101,17 @@ I am always up for:
  - discussion about new gadgets and PC configurations
  - Logo Designing
  - Traveling (*obviously* :sweat_smile:)
+
+ <!-- home section start -->
+  <section class="home" id="home">
+          <div class="max-width">
+              <div class="home-content">
+                  <div class="text-3">I'm a <span class="typing"></span></div>
+                  {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+                  <a href="https://drive.google.com/drive/folders/1ax3GNom6oV6kqe4vubMIsGD5AwTUXgU7"> Verify my Certifications</a>
+              </div>
+          </div>
+      </section>
 
 <!-- {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/resume.pdf" "newtab" >}}resumé{{< /staticref >}}. -->
 
