@@ -191,12 +191,12 @@ section .title::after{
 }
 
 .about .about-content{
-    width: 55%;
+    width: 85%;
 }
 .about .about-content .text{
-    font-size: 27px;
-    font-weight: 600;
-    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 6px;
 }
 .about .about-content .text span{
     color: #31669b;
@@ -208,12 +208,12 @@ section .title::after{
     display: inline-block;
     background: #31669b;
     color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #31669b;
+    font-size: 10px;
+    font-weight: 300;
+    padding: 5px 15px;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 1px solid #31669b;
     transition: all 0.3s ease;
 }
 .about .about-content a:hover{
