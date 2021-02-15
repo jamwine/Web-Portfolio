@@ -136,7 +136,7 @@ Meanwhile, jump into my projects at [Github](https://github.com/jamwine).
 			<span>PROJECT 1</span>
 			<p class="heading">P1</p>
 			<p class="details">Project Description</p>
-			<button><a href ='www.google.com' alt='Read More'></button>
+			<button><a href ='https://www.google.com'>Read More</a></button>
 		 </div>
 	  <!--2------------->
 		<div class="box-2">
