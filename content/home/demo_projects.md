@@ -154,7 +154,4 @@ Meanwhile, jump into my projects at [Github](https://github.com/jamwine).
 		</div>
 	</div>
 </div>
-
-
-
 <img src='https://avatars.githubusercontent.com/u/7883396?s=460&u=56eaac1fc8d368fa0e20a5358ebe36de17c6facd&v=4' alt='jamwine.png' width=400 height=400 class='center'>
