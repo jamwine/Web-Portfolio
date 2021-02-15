@@ -191,7 +191,7 @@ section .title::after{
 }
 
 .about .about-content{
-    width: 85%;
+    width: 55%;
 }
 .about .about-content .text{
     font-size: 26px;

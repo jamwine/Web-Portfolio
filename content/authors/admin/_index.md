@@ -86,6 +86,7 @@ highlight_name: false
                       <div class="text">I'm a <span class="typing"></span></div>
                       <p>I have a MS degree in Computer Science and 4+ years of professional experience in working towards <b>data analysis</b> and <b>defining data-driven models</b> for actionable insights. I have a <b>strong mathematical background</b> with analytical and problem-solving skills. I excel in <b>automating back-end processes</b>, gathering raw data by <b>utilizing APIs</b>, and defining </b>Machine Learning models with visual animations</b>. My experience at USD, Zenatix, and Cognizant make me versatile in working <em>independently</em> as well as a <i>team player</i>.</p>
                     {{< staticref "media/resume.pdf" "newtab" >}}<i>Download my resumé</i>{{< /staticref >}}
+                    
                   <a href="https://drive.google.com/drive/folders/1ax3GNom6oV6kqe4vubMIsGD5AwTUXgU7"><i> Verify my Certifications</i></a>
               </div>
           </div>
