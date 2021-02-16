@@ -97,148 +97,62 @@ title:
  - Traveling (*obviously* :sweat_smile:) -->
 
 
-<!-- Load d3.js -->
-<script src="https://d3js.org/d3.v4.js"></script>
+<h1>Wave animation with <a href="https://animejs.com/" target="_blank">Anime.js</a> and <a href="https://getwaves.io/" target="_blank">Get Waves</a></h1>
 
-<!-- Create a div where the graph will take place -->
-<div id="my_dataviz"></div>
-<div id="my_dataviz2"></div>
 
+<svg xmlns="http://www.w3.org/2000/svg" class="wave-top" width="100" viewBox="0 0 1440 320"><path fill="#31669b" fill-opacity="0.8" fill-rule="evenodd" clip-rule="evenodd" d="M0,192L12.6,202.7C25.3,213,51,235,76,218.7C101.1,203,126,149,152,106.7C176.8,64,202,32,227,64C252.6,96,278,192,303,229.3C328.4,267,354,245,379,245.3C404.2,245,429,267,455,272C480,277,505,267,531,229.3C555.8,192,581,128,606,96C631.6,64,657,64,682,80C707.4,96,733,128,758,128C783.2,128,808,96,834,101.3C858.9,107,884,149,909,170.7C934.7,192,960,192,985,197.3C1010.5,203,1036,213,1061,208C1086.3,203,1112,181,1137,192C1162.1,203,1187,245,1213,256C1237.9,267,1263,245,1288,229.3C1313.7,213,1339,203,1364,202.7C1389.5,203,1415,213,1427,218.7L1440,224L1440,320L1427.4,320C1414.7,320,1389,320,1364,320C1338.9,320,1314,320,1288,320C1263.2,320,1238,320,1213,320C1187.4,320,1162,320,1137,320C1111.6,320,1086,320,1061,320C1035.8,320,1011,320,985,320C960,320,935,320,909,320C884.2,320,859,320,834,320C808.4,320,783,320,758,320C732.6,320,707,320,682,320C656.8,320,632,320,606,320C581.1,320,556,320,531,320C505.3,320,480,320,455,320C429.5,320,404,320,379,320C353.7,320,328,320,303,320C277.9,320,253,320,227,320C202.1,320,177,320,152,320C126.3,320,101,320,76,320C50.5,320,25,320,13,320L0,320Z"></path></svg>
+
+<svg class="wave-top" width="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#31669b" fill-opacity="0.8" d="M0,96L12.6,85.3C25.3,75,51,53,76,58.7C101.1,64,126,96,152,96C176.8,96,202,64,227,90.7C252.6,117,278,203,303,208C328.4,213,354,139,379,117.3C404.2,96,429,128,455,149.3C480,171,505,181,531,165.3C555.8,149,581,107,606,80C631.6,53,657,43,682,58.7C707.4,75,733,117,758,138.7C783.2,160,808,160,834,165.3C858.9,171,884,181,909,197.3C934.7,213,960,235,985,250.7C1010.5,267,1036,277,1061,272C1086.3,267,1112,245,1137,213.3C1162.1,181,1187,139,1213,138.7C1237.9,139,1263,181,1288,197.3C1313.7,213,1339,203,1364,186.7C1389.5,171,1415,149,1427,138.7L1440,128L1440,320L1427.4,320C1414.7,320,1389,320,1364,320C1338.9,320,1314,320,1288,320C1263.2,320,1238,320,1213,320C1187.4,320,1162,320,1137,320C1111.6,320,1086,320,1061,320C1035.8,320,1011,320,985,320C960,320,935,320,909,320C884.2,320,859,320,834,320C808.4,320,783,320,758,320C732.6,320,707,320,682,320C656.8,320,632,320,606,320C581.1,320,556,320,531,320C505.3,320,480,320,455,320C429.5,320,404,320,379,320C353.7,320,328,320,303,320C277.9,320,253,320,227,320C202.1,320,177,320,152,320C126.3,320,101,320,76,320C50.5,320,25,320,13,320L0,320Z"></path></svg>
+
+<style>
+html, body {height: 100%;}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+h1 {
+  position: relative;
+  z-index: 10;
+    color: black
+}
+
+a {
+  color: #31669b;
+  text-decoration: none;
+}
+
+.wave-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+</style>
 <script>
+const wave1 = "M0,192L12.6,202.7C25.3,213,51,235,76,218.7C101.1,203,126,149,152,106.7C176.8,64,202,32,227,64C252.6,96,278,192,303,229.3C328.4,267,354,245,379,245.3C404.2,245,429,267,455,272C480,277,505,267,531,229.3C555.8,192,581,128,606,96C631.6,64,657,64,682,80C707.4,96,733,128",
+      wave2 = "M0,96L12.6,85.3C25.3,75,51,53,76,58.7C101.1,64,126,96,152,96C176.8,96,202,64,227,90.7C252.6,117,278,203,303,208C328.4,213,354,139,379,117.3C404.2,96,429,128,455,149.3C480,171,505,181,531,165.3C555.8,149,581,107,606,80C631.6,53,657,43,682,58.7C707.4,75,733,117,758,138.7C783.2,160,808,160,834,165.3C858.9,171,884,181,909",
+      wave3 = "M0,192L12.6,202.7C25.3,213,51,235,76,218.7C101.1,203,126,149,152,106.7C176.8,64,202,32,227,64C252.6,96,278,192,303,320C1035.8,320,1011,320,985,320C960,320,935,320,909,320C884.2,320,859,320,834,320C808.4,320,783,320,758,320C732.6,320,707,320,682,320C656.8,320,632,320,606,320C581.1,320,556,320,531,320C505.3,320,480,320,455,320C429.5,320,404,320,379,320C353.7,320,328,320,303,320C277.9,320,253,320,227",
+      wave4 = "M0,192L12.6,202.7C25.3,213,51,235,76,218.7C101.1,203,126,149,152,272C1086.3,267,1112,245,1137,213.3C1162.1,181,1187,139,1213,138.7C1237.9,139,1263,181,1288,197.3C1313.7,213,1339,203,1364,186.7C1389.5,171,1415,149,1427,138.7L1440,128L1440,320L1427.4,320C1414.7,320,1389,320,1364,320C1338.9,320,1314,320,1288,320C1263.2,320,1238,320";
 
-// set the dimensions and margins of the graph
-var margin = {top: 10, right: 70, bottom: 10, left: 30},
-    width = 500 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
-
-// append the svg object to the body of the page
-var svg = d3.select("#my_dataviz")
-  .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-    .attr("transform",
-          "translate(" + margin.left + "," + margin.top + ")");
-
-// Parse the Data
-d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/7_OneCatOneNum_header.csv", function(data) {
-
-// X axis
-var x = d3.scaleBand()
-  .range([ 0, width ])
-  .domain(data.map(function(d) { return d.Country; }))
-  .padding(0.2);
-svg.append("g")
-  .attr("transform", "translate(0," + height + ")")
-  .call(d3.axisBottom(x))
-  .selectAll("text")
-    .attr("transform", "translate(-10,0)rotate(-45)")
-    .style("text-anchor", "end");
-
-// Add Y axis
-var y = d3.scaleLinear()
-  .domain([0, 13000])
-  .range([ height, 0]);
-svg.append("g")
-  .call(d3.axisLeft(y));
-
-// Bars
-svg.selectAll("mybar")
-  .data(data)
-  .enter()
-  .append("rect")
-    .attr("x", function(d) { return x(d.Country); })
-    .attr("width", x.bandwidth())
-    .attr("fill", "#69b3a2")
-    // no bar at the beginning thus:
-    .attr("height", function(d) { return height - y(0); }) // always equal to 0
-    .attr("y", function(d) { return y(0); })
-
-// Animation
-svg.selectAll("rect")
-  .transition()
-  .duration(800)
-  .attr("y", function(d) { return y(d.Value); })
-  .attr("height", function(d) { return height - y(d.Value); })
-  .delay(function(d,i){console.log(i) ; return(i*100)})
-
-})
-
-
-// set the dimensions and margins of the graph
-var margin = {top: 10, right: 30, bottom: 10, left: 70},
-    width = 500 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
-
-// append the svg object to the body of the page
-var svg = d3.select("#my_dataviz2")
-  .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-    .attr("transform",
-          "translate(" + margin.left + "," + margin.top + ")");
-
-// Parse the Data
-d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/7_OneCatOneNum_header.csv", function(data) {
-
-// sort data
-data.sort(function(b, a) {
-  return a.Value - b.Value;
+anime({
+  targets: '.wave-top > path',
+  easing: 'linear',
+  duration: 5000,
+  loop: true,
+  d: [
+    { value: [wave1, wave2] },
+    { value: wave3 },
+    { value: wave4 },
+    { value: wave1 },
+  ],
 });
-
-// Add X axis
-var x = d3.scaleLinear()
-  .domain([0, 13000])
-  .range([ 0, width]);
-svg.append("g")
-  .attr("transform", "translate(0," + height + ")")
-  .call(d3.axisBottom(x))
-  .selectAll("text")
-    .attr("transform", "translate(-10,0)rotate(-45)")
-    .style("text-anchor", "end");
-
-// Y axis
-var y = d3.scaleBand()
-  .range([ 0, height ])
-  .domain(data.map(function(d) { return d.Country; }))
-  .padding(1);
-svg.append("g")
-  .call(d3.axisLeft(y))
-
-// Lines
-svg.selectAll("myline")
-  .data(data)
-  .enter()
-  .append("line")
-    .attr("x1", x(0))
-    .attr("x2", x(0))
-    .attr("y1", function(d) { return y(d.Country); })
-    .attr("y2", function(d) { return y(d.Country); })
-    .attr("stroke", "grey")
-
-// Circles -> start at X=0
-svg.selectAll("mycircle")
-  .data(data)
-  .enter()
-  .append("circle")
-    .attr("cx", x(0) )
-    .attr("cy", function(d) { return y(d.Country); })
-    .attr("r", "7")
-    .style("fill", "#69b3a2")
-    .attr("stroke", "black")
-
-// Change the X coordinates of line and circle
-svg.selectAll("circle")
-  .transition()
-  .duration(2000)
-  .attr("cx", function(d) { return x(d.Value); })
-
-svg.selectAll("line")
-  .transition()
-  .duration(2000)
-  .attr("x1", function(d) { return x(d.Value); })
-
-})
-
 </script>
