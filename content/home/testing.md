@@ -98,50 +98,524 @@ title:
 
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js'></script>
-<div class='anim'>Data Professional</div>
-
-
-<svg xmlns="http://www.w3.org/2000/svg" class="wave-top" width="100" viewBox="0 0 1440 320"><path fill="#31669b" fill-opacity="0.8" fill-rule="evenodd" clip-rule="evenodd" d="M0,192L12.6,202.7C25.3,213,51,235,76,218.7C101.1,203,126,149,152,106.7C176.8,64,202,32,227,64C252.6,96,278,192,303,229.3C328.4,267,354,245,379,245.3C404.2,245,429,267,455,272C480,277,505,267,531,229.3C555.8,192,581,128,606,96C631.6,64,657,64,682,80C707.4,96,733,128,758,128C783.2,128,808,96,834,101.3C858.9,107,884,149,909,170.7C934.7,192,960,192,985,197.3C1010.5,203,1036,213,1061,208C1086.3,203,1112,181,1137,192C1162.1,203,1187,245,1213,256C1237.9,267,1263,245,1288,229.3C1313.7,213,1339,203,1364,202.7C1389.5,203,1415,213,1427,218.7L1440,224L1440,320L1427.4,320C1414.7,320,1389,320,1364,320C1338.9,320,1314,320,1288,320C1263.2,320,1238,320,1213,320C1187.4,320,1162,320,1137,320C1111.6,320,1086,320,1061,320C1035.8,320,1011,320,985,320C960,320,935,320,909,320C884.2,320,859,320,834,320C808.4,320,783,320,758,320C732.6,320,707,320,682,320C656.8,320,632,320,606,320C581.1,320,556,320,531,320C505.3,320,480,320,455,320C429.5,320,404,320,379,320C353.7,320,328,320,303,320C277.9,320,253,320,227,320C202.1,320,177,320,152,320C126.3,320,101,320,76,320C50.5,320,25,320,13,320L0,320Z"></path></svg>
-
-<svg class="wave-top" width="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#31669b" fill-opacity="0.8" d="M0,96L12.6,85.3C25.3,75,51,53,76,58.7C101.1,64,126,96,152,96C176.8,96,202,64,227,90.7C252.6,117,278,203,303,208C328.4,213,354,139,379,117.3C404.2,96,429,128,455,149.3C480,171,505,181,531,165.3C555.8,149,581,107,606,80C631.6,53,657,43,682,58.7C707.4,75,733,117,758,138.7C783.2,160,808,160,834,165.3C858.9,171,884,181,909,197.3C934.7,213,960,235,985,250.7C1010.5,267,1036,277,1061,272C1086.3,267,1112,245,1137,213.3C1162.1,181,1187,139,1213,138.7C1237.9,139,1263,181,1288,197.3C1313.7,213,1339,203,1364,186.7C1389.5,171,1415,149,1427,138.7L1440,128L1440,320L1427.4,320C1414.7,320,1389,320,1364,320C1338.9,320,1314,320,1288,320C1263.2,320,1238,320,1213,320C1187.4,320,1162,320,1137,320C1111.6,320,1086,320,1061,320C1035.8,320,1011,320,985,320C960,320,935,320,909,320C884.2,320,859,320,834,320C808.4,320,783,320,758,320C732.6,320,707,320,682,320C656.8,320,632,320,606,320C581.1,320,556,320,531,320C505.3,320,480,320,455,320C429.5,320,404,320,379,320C353.7,320,328,320,303,320C277.9,320,253,320,227,320C202.1,320,177,320,152,320C126.3,320,101,320,76,320C50.5,320,25,320,13,320L0,320Z"></path></svg>
+<div id="root"></div>
 
 <style>
-html, body {height: 100%;}
+* {
+  box-sizing: border-box;
+}
 
-.anim {
+.viz {
+  display: flex;
+  height: 100vh;
+  margin: auto;
+  max-width: 920px;
+}
+
+.viz-item {
+  height: 100%;
+}
+
+.viz-item-indicator {
+  background-color: #000;
+  border-right: 1px solid #000;
+  height: 5px;
+  margin-bottom: 50px;
+}
+
+.viz-item-inner {
+  height: 80%;
+  padding-top: 20%;
   position: relative;
-  z-index: 10;
-    color: black
+  transform-origin: 50% 50%;
 }
 
-a {
-  color: #31669b;
-  text-decoration: none;
+.viz-item--active .viz-item-dot {
+  background-color: #ffffff;
 }
 
-.wave-top {
+.viz-item--partitioned {
+  background-color: hsla(324, 100%, 50%, .3);
+}
+
+.viz-item--partitioned .viz-item-indicator {
+  background-color: hsl(324, 100%, 76%);
+}
+
+.viz-item-dot {
+  background-color: var(--base-color);
+  border-radius: 50px;
+  display: block;
+  height: 100%;
+  left: 50%;
   position: absolute;
+  width: 2px;
+}
+
+.viz-item-dot:first-child {
   top: 0;
-  left: 0;
-  width: 100%;
 }
 </style>
 <script>
-const wave1 = "M0,192L12.6,202.7C25.3,213,51,235,76,218.7C101.1,203,126,149,152,106.7C176.8,64,202,32,227,64C252.6,96,278,192,303,229.3C328.4,267,354,245,379,245.3C404.2,245,429,267,455,272C480,277,505,267,531,229.3C555.8,192,581,128,606,96C631.6,64,657,64,682,80C707.4,96,733,128",
-      wave2 = "M0,96L12.6,85.3C25.3,75,51,53,76,58.7C101.1,64,126,96,152,96C176.8,96,202,64,227,90.7C252.6,117,278,203,303,208C328.4,213,354,139,379,117.3C404.2,96,429,128,455,149.3C480,171,505,181,531,165.3C555.8,149,581,107,606,80C631.6,53,657,43,682,58.7C707.4,75,733,117,758,138.7C783.2,160,808,160,834,165.3C858.9,171,884,181,909",
-      wave3 = "M0,192L12.6,202.7C25.3,213,51,235,76,218.7C101.1,203,126,149,152,106.7C176.8,64,202,32,227,64C252.6,96,278,192,303,320C1035.8,320,1011,320,985,320C960,320,935,320,909,320C884.2,320,859,320,834,320C808.4,320,783,320,758,320C732.6,320,707,320,682,320C656.8,320,632,320,606,320C581.1,320,556,320,531,320C505.3,320,480,320,455,320C429.5,320,404,320,379,320C353.7,320,328,320,303,320C277.9,320,253,320,227",
-      wave4 = "M0,192L12.6,202.7C25.3,213,51,235,76,218.7C101.1,203,126,149,152,272C1086.3,267,1112,245,1137,213.3C1162.1,181,1187,139,1213,138.7C1237.9,139,1263,181,1288,197.3C1313.7,213,1339,203,1364,186.7C1389.5,171,1415,149,1427,138.7L1440,128L1440,320L1427.4,320C1414.7,320,1389,320,1364,320C1338.9,320,1314,320,1288,320C1263.2,320,1238,320";
+window.CP.PenTimer.MAX_TIME_IN_LOOP_WO_EXIT = 40000;
 
-anime({
-  targets: '.wave-top > path',
-  easing: 'linear',
-  duration: 5000,
-  loop: true,
-  d: [
-    { value: [wave1, wave2] },
-    { value: wave3 },
-    { value: wave4 },
-    { value: wave1 },
-  ],
-});
+let {h, render, Component,} = preact; // import {h, render, Component,} from 'preact';
+
+/** @jsx h */
+
+// Generic swap function.
+const swap = async (items, indexA, indexB, options) => {
+  const swapValue = items[indexA];
+  items[indexA] = items[indexB];
+  items[indexB] = swapValue;
+
+  if (options.delay) {
+    await sleep(options.delay);
+  }
+
+  return {indexA, indexB};
+};
+
+// Shameless stackoverflow copy-paste.
+const sleep = (ms) => {
+  return (new Promise(resolve => setTimeout(resolve, ms)));
+};
+
+const watchableSwap = async function (items, indexA, indexB, options) {
+  options.callbacks.swapStart(items, indexA, indexB);
+  await swap(items, indexA, indexB, options)
+    .then((data) => {
+      options.callbacks.swapDone(items, indexA, indexB);
+
+      return data;
+    })
+  ;
+}
+
+const QuickSortStrategy = (function () {
+  const partition = async function (items, startIndex, stopIndex, options) {
+    let pivotValue = items[stopIndex];
+    let pivotIndex = startIndex;
+    
+    for (let i = startIndex; i < stopIndex; ++i) {
+      if (items[i] < pivotValue) {
+        await watchableSwap(items, i, pivotIndex, options)
+        ++pivotIndex;
+      }
+    }
+  
+    await watchableSwap(items, pivotIndex, stopIndex, options);
+    return pivotIndex;
+  };
+  
+  const execute = async function (items, startIndex, stopIndex, options) {
+    if (startIndex >= stopIndex) {
+      return items;
+    }
+
+    var pivotIndex = await partition(items, startIndex, stopIndex, options);
+
+    await Promise.all([
+      profileAwareExecute(items, startIndex, pivotIndex - 1, options),
+      profileAwareExecute(items, pivotIndex, stopIndex, options),
+    ]);
+    
+    return items;
+  }
+  
+  const profileAwareExecute = function (items, startIndex, stopIndex, options) {
+    options.callbacks.partitionStart(items, startIndex, stopIndex);
+    const promise = (new Promise((resolve) => {
+      const data = execute(items, startIndex, stopIndex, options);
+      
+      resolve(data);
+    }).then((data) => {
+      options.callbacks.partitionDone(items, startIndex, stopIndex);
+
+      return data;
+    }));
+    
+    return promise;
+  }
+  
+  function QuickSortStrategy(items, options) {
+    if (!(this instanceof QuickSortStrategy)) { 
+      throw new TypeError('Cannot call a class as a function');
+    }
+    
+    this.items = items;
+    this.startIndex = 0;
+    this.stopIndex = items.length - 1;
+    this.options = options;
+  }
+  
+  Object.defineProperty(QuickSortStrategy.prototype, 'execute', {
+    value: async function () {
+      const promise = profileAwareExecute(this.items, this.startIndex, this.stopIndex, this.options)
+      
+      if (this.options.callbacks.done) {
+        promise.then((data) => {
+          this.options.callbacks.done(data);
+        });
+      }
+    },
+  });
+  Object.defineProperty(QuickSortStrategy.prototype, 'getItems', {
+    value: function () {
+      return this.items;
+    },
+  });
+  
+  return QuickSortStrategy;
+})();
+
+const HeapSortStrategy = (function () {
+  const findParent = (index) => {
+    return Math.floor((index - 1) / 2);
+  };
+  
+  const findLeftChild = (index) => {
+    return (2 * index) + 1;
+  };
+  
+  const findRightChild = (index) => {
+    return findLeftChild(index) + 1;
+  };
+  
+  const buildMaxHeap = async function (items, heapSize, options) {
+    for (let index = findParent(heapSize); 0 <= index; --index) {
+       await siftDown(items, index, heapSize, options);
+    }
+    
+    return items;
+  };
+  
+  const siftDown = async function (items, start, end, options) {
+    let largest = start;
+    while (largest < end) {
+      let leftIndex = findLeftChild(largest);
+      let rightIndex = findRightChild(largest);
+      let swapIndex = largest;
+      
+      if (leftIndex < end && items[swapIndex] < items[leftIndex]) {
+        swapIndex = leftIndex;
+      }
+      
+      if (rightIndex < end && items[swapIndex] < items[rightIndex]) {
+        swapIndex = leftIndex + 1;
+      }
+      
+      if (swapIndex === largest) {
+        // Root is the largest element.
+        return;
+      }
+
+      await watchableSwap(items, swapIndex, largest, options);
+      largest = swapIndex;
+    }
+    
+    return items;
+  };
+  
+  const execute = async function (items, options) {
+    const heapSize = items.length;
+    
+    // Build the heap.
+    await buildMaxHeap(items, heapSize, options);
+
+    for (let i = heapSize - 1; 0 <= i; --i) {
+      await watchableSwap(items, 0, i, options);
+
+      await profileAwareSiftDown(items, 0, i, options);
+    }
+
+    return items;
+  };
+  
+  const profileAwareSiftDown = function (items, start, end, options) {
+    options.callbacks.partitionStart(items, start, end);
+    const promise = (new Promise((resolve) => {
+      const data = siftDown(items, start, end, options);
+      
+      resolve(data);
+    }).then((data) => {
+      options.callbacks.partitionDone(items, start, end);
+
+      return data;
+    }));
+    
+    return promise;
+  }
+  
+  function HeapSortStrategy(items, options) {
+    if (!(this instanceof HeapSortStrategy)) { 
+      throw new TypeError('Cannot call a class as a function');
+    }
+    
+    this.items = items;
+    this.options = options;
+  }
+  
+  Object.defineProperty(HeapSortStrategy.prototype, 'execute', {
+    value: async function () {
+      const promise = execute(this.items, this.options)
+      
+      if (this.options.callbacks.done) {
+        promise.then((data) => {
+          this.options.callbacks.done(data);
+        });
+      }
+      
+      return promise;
+    },
+  });
+  
+  return HeapSortStrategy;
+})();
+
+class App extends Component
+{
+  constructor(props)
+  {
+    super(props);
+    
+    this.algorithms = ['QUICK_SORT', 'HEAP_SORT'];
+    const meta = [];
+    for (let index = 0; index < this.props.length; ++index) {
+      meta.push({
+        ref: preact.createRef(),
+      });
+    }
+    this.state = {
+      delay: 50,
+      items: [],
+      meta: meta,
+      runsCount: 0,
+    };
+  }
+  
+  setup()
+  {
+    const items = [];
+    for (let index = 0; index < this.props.length; ++index) {
+      var value = -1;
+      do {
+        value = anime.random(1, this.props.length);
+      } while (-1 !== items.indexOf(value));
+      items.push(value);
+    }
+    
+    // Define sort strategy options.
+    const options = {
+      callbacks: {
+        swapStart:      this.onSwapStart.bind(this),
+        swapDone:       this.onSwapDone.bind(this),
+        partitionStart: this.onPartitionStart.bind(this),
+        partitionDone:  this.onPartitionDone.bind(this),
+        done:           this.onSortingDone.bind(this),
+      },
+      delay: this.state.delay,
+    };
+    
+    // Define the algorithm;
+    let algorithm = this.algorithms[this.state.runsCount % this.algorithms.length];
+    let strategy;
+    switch (algorithm) {
+      case 'QUICK_SORT':
+        strategy = new QuickSortStrategy([...items], options);
+        
+        break;
+      case 'HEAP_SORT':
+        options.callbacks.partitionDone = (items, lowerBoundary, higherBoundary) => {
+          const meta = this.state.meta;
+          meta[higherBoundary] = Object.assign(meta[higherBoundary] || {}, {partition: false});
+
+          this.setState({
+            meta: meta,
+          });
+        };
+        strategy = new HeapSortStrategy([...items], options);
+        
+        break;
+      default:
+        return;
+    }
+    
+    this.setState({
+      strategy: strategy,
+      items: [...items],
+    }, () => {
+      this.resetView();
+      
+      this.runSort();
+    });
+  }
+  
+  componentDidMount()
+  {
+    this.setup();
+  }
+  
+  componentDidUpdate()
+  {
+    this.drawY();
+  }
+  
+  runSort()
+  {
+    setTimeout(() => {
+      this.state.strategy.execute();
+    }, 2000);
+  }
+  
+  drawY()
+  {
+    const items = this.state.items;
+    anime({
+      duration: 500,
+      easing: 'easeOutQuint',
+      scaleY: (el, index, length) => {
+        return (items[index] / length);
+      },
+      /*targets: this.state.meta.map((element) => {
+        return element.ref.current;
+      }),*/
+      targets: '.viz-item-inner',
+    });
+  }
+  
+  resetView()
+  {
+    // Anime does not have any methods for resetting style;
+    ['.viz-item', '.viz-item-dot', '.viz-item-indicator'].map((selector) => {
+       const itemElements = document.querySelectorAll(selector);
+      for (let i = 0; i < itemElements.length; ++i) {
+        itemElements[i].style.backgroundColor = null;
+      }
+    });
+  }
+  
+  onSortingDone(items)
+  {
+    const duration = 275;
+    Promise.all([
+      anime({
+        delay: anime.stagger(10),
+        backgroundColor: ['#000000', 'rgba(68, 255, 210, 0.25)', '#000000'],
+        duration: duration,
+        targets: '.viz-item',
+      }),
+      anime({
+        backgroundColor: '#44FFD2',
+        delay: anime.stagger(10),
+        duration: duration,
+        targets: '.viz-item-dot',
+      }),
+      anime({
+        delay: anime.stagger(10),
+        backgroundColor: '#44FFD2',
+        duration: duration,
+        targets: '.viz-item-indicator',
+      }),
+    ]).then(() => {
+      this.setState({
+        runsCount: this.state.runsCount + 1,
+      })
+      
+      setTimeout(this.setup.bind(this), 2500);
+    });
+  }
+  
+  onPartitionStart(items, lowerBoundary, higherBoundary)
+  {
+    this.handleColors(items, lowerBoundary, higherBoundary, {partition: true});
+  }
+  
+  onPartitionDone(items, lowerBoundary, higherBoundary)
+  {
+    this.handleColors(items, lowerBoundary, higherBoundary, {partition: false});
+  }
+  
+  onSwapStart(items, currentIndex, pivotIndex)
+  {
+    this.handleColors2(items, currentIndex, pivotIndex, {active: true});
+    
+    /*anime({
+      duration: 500,
+      easing: 'easeOutQuint',
+      scaleY: (el, index, length) => {
+        return (items[currentIndex] / items.length);
+      },
+      targets: this.state.meta[currentIndex].ref.current,
+    });
+    anime({
+      duration: 500,
+      easing: 'easeOutQuint',
+      scaleY: (el, index, length) => {
+        return (items[pivotIndex] / items.length);
+      },
+      targets: this.state.meta[pivotIndex].ref.current,
+    });*/
+  }
+  
+  onSwapDone(items, currentIndex, pivotIndex)
+  {
+    this.handleColors2(items, currentIndex, pivotIndex, {active: false});
+  }
+  
+  handleColors(items, lowerBoundary, higherBoundary, current)
+  {
+    const meta = this.state.meta || [];
+    for (var i = lowerBoundary; i <= higherBoundary; ++i) {
+      meta[i] = Object.assign(this.state.meta[i] || {}, current);
+    }
+
+    this.setState({
+      meta: meta,
+    });
+  }
+  
+  handleColors2(items, currentIndex, pivotIndex, current)
+  {
+    const meta = this.state.meta || [];
+    meta[currentIndex] = Object.assign(this.state.meta[currentIndex] || {}, current);
+    meta[pivotIndex] = Object.assign(this.state.meta[pivotIndex] || {}, current);
+    
+    this.setState({
+      meta: meta,
+      items: [...items],
+    });
+  }
+  
+  render() {
+    return (
+      <div>
+        <div className='viz'>
+          {this.state.items && this.state.items.map((item, index) => {
+            let baseClasses = 'viz-item';
+            if (this.state.meta[index] && this.state.meta[index].partition) {
+              baseClasses += ' viz-item--partitioned';    
+            }
+            if (this.state.meta[index] && this.state.meta[index].active) {
+              baseClasses += ' viz-item--active';    
+            }
+            
+            return (
+              <div className={baseClasses} style={{
+                width: (100 / this.state.items.length) + '%',
+              }}>
+                <div className='viz-item-indicator'></div>
+                <div className='viz-item-inner' ref={this.state.meta[index].ref}>
+                  <div className='viz-item-dot'></div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    )
+  }
+}
+
+render(<App length={75} />, document.getElementById('root'));
 </script>
