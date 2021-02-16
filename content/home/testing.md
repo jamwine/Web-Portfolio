@@ -97,7 +97,10 @@ title:
  - Traveling (*obviously* :sweat_smile:) -->
 
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/preact/8.4.2/preact.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js'></script>
+
 <div id="root"></div>
 
 <style>
