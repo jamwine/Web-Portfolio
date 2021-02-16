@@ -97,7 +97,8 @@ title:
  - Traveling (*obviously* :sweat_smile:) -->
 
 
-<h1>Wave animation with <a href="https://animejs.com/" target="_blank">Anime.js</a> and <a href="https://getwaves.io/" target="_blank">Get Waves</a></h1>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js'></script>
+<div class='anim'>Data Professional</div>
 
 
 <svg xmlns="http://www.w3.org/2000/svg" class="wave-top" width="100" viewBox="0 0 1440 320"><path fill="#31669b" fill-opacity="0.8" fill-rule="evenodd" clip-rule="evenodd" d="M0,192L12.6,202.7C25.3,213,51,235,76,218.7C101.1,203,126,149,152,106.7C176.8,64,202,32,227,64C252.6,96,278,192,303,229.3C328.4,267,354,245,379,245.3C404.2,245,429,267,455,272C480,277,505,267,531,229.3C555.8,192,581,128,606,96C631.6,64,657,64,682,80C707.4,96,733,128,758,128C783.2,128,808,96,834,101.3C858.9,107,884,149,909,170.7C934.7,192,960,192,985,197.3C1010.5,203,1036,213,1061,208C1086.3,203,1112,181,1137,192C1162.1,203,1187,245,1213,256C1237.9,267,1263,245,1288,229.3C1313.7,213,1339,203,1364,202.7C1389.5,203,1415,213,1427,218.7L1440,224L1440,320L1427.4,320C1414.7,320,1389,320,1364,320C1338.9,320,1314,320,1288,320C1263.2,320,1238,320,1213,320C1187.4,320,1162,320,1137,320C1111.6,320,1086,320,1061,320C1035.8,320,1011,320,985,320C960,320,935,320,909,320C884.2,320,859,320,834,320C808.4,320,783,320,758,320C732.6,320,707,320,682,320C656.8,320,632,320,606,320C581.1,320,556,320,531,320C505.3,320,480,320,455,320C429.5,320,404,320,379,320C353.7,320,328,320,303,320C277.9,320,253,320,227,320C202.1,320,177,320,152,320C126.3,320,101,320,76,320C50.5,320,25,320,13,320L0,320Z"></path></svg>
@@ -107,19 +108,7 @@ title:
 <style>
 html, body {height: 100%;}
 
-body {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  text-align: center;
-  color: white;
-  box-sizing: border-box;
-  padding: 1rem;
-}
-
-h1 {
+.anim {
   position: relative;
   z-index: 10;
     color: black
