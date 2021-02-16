@@ -19,9 +19,6 @@ design:
 # ... Put Your Section Options Here (title etc.) ...
 title:
 ---
-
-
-
 <!-- skills section start -->
    <!-- <section class="skills">
           <div class="max-width">
@@ -108,11 +105,11 @@ title:
 
 .anim, .anim svg {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 40%;
 }
 .anim path {
-  stroke-width: 2;
+  stroke-width: 1;
 }
 </style>
 
