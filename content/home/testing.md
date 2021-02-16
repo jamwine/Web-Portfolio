@@ -17,7 +17,7 @@ design:
   columns: "1"
 
 # ... Put Your Section Options Here (title etc.) ...
-title:
+title: Building Data Pipelines
 ---
 <!-- skills section start -->
    <!-- <section class="skills">
