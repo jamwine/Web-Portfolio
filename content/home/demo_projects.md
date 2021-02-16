@@ -379,29 +379,6 @@ section .title::after{
     width: 80%;
 }
 
-
-
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid #31669b!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: #31669b!important;
-}
 </style>
 
  <head>
@@ -462,28 +439,6 @@ section .title::after{
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
-    });
-
-    // owl carousel script
-    $('.carousel').owlCarousel({
-        margin: 20,
-        loop: true,
-        autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0:{
-                items: 1,
-                nav: false
-            },
-            600:{
-                items: 2,
-                nav: false
-            },
-            1000:{
-                items: 3,
-                nav: false
-            }
-        }
     });
 });
   </script>
